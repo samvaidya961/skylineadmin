@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --blue: #4156a7;
+  --grey: #def0fc;
+  --orange: #f7ca00;
+}
+
+.bluebg{
+  background-color: var(--blue);
+  color: white;
+}
+.greybg{
+  background-color: var(--grey);
+  color: black;
+}
+.orangebg{
+  background-color: var(--orange);
+  color: black;
+}
 #wrapper {
   overflow-x: hidden;
 }
@@ -6,15 +33,12 @@
   min-height: 100vh;
   margin-left: -15rem;
   transition: margin 0.25s ease-out;
+  box-shadow: 1px 1px 3px rgb(235, 235, 235);
 }
 
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
   font-size: 1.2rem;
-}
-
-#sidebar-wrapper .list-group {
-  width: 15rem;
 }
 
 #page-content-wrapper {
@@ -37,5 +61,65 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
   body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: -15rem;
+  }
+}
+
+/* sidebar toggle btn */
+#adminsidebar{
+  height: 100vh;
+  width: 15rem;
+}
+#adminsidebar a{
+  color: white;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
+  font-size: 14px;
+}
+#adminsidebar .nav-link{
+  padding-left: 0rem;
+  border-bottom: 0.5px solid rgb(77, 77, 77);
+  padding-bottom: 1.5rem;
+  border-radius: 0px;
+}
+#adminsidebar a:hover{
+  color: rgb(187, 186, 186);
+}
+#sidebarToggle{
+  background-color: var(--blue);
+  border: none;
+  color: white;
+}
+#sidebarToggle:hover{
+  color: rgb(240, 240, 240);
+}
+#navbartogglerbtn{
+  background-color: var(--blue);
+  border: none;
+  color: white;
+}
+#navbartogglerbtn:hover{
+  color: rgb(240, 240, 240);
+}
+
+/* logo */
+#companylogo img{
+ height: 1.5rem;
+}
+
+/* Smartphones ----------- */
+@media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+}
+
+/* iPads ----------- */
+@media only screen and (min-device-width: 501px) and (max-device-width: 1024px) {
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-device-width: 1025px) {
+  #sidebarToggle{
+    display: none;
+  }
+  #navbartogglerbtn{
+    display: none;
   }
 }
