@@ -7,7 +7,7 @@
   font-family: "Open Sans", sans-serif;
 }
 
-body{
+body {
   background-color: rgb(245, 245, 245);
 }
 :root {
@@ -16,15 +16,15 @@ body{
   --orange: #f7ca00;
 }
 
-.bluebg{
+.bluebg {
   background-color: var(--blue);
   color: white;
 }
-.greybg{
+.greybg {
   background-color: var(--grey);
   color: black;
 }
-.orangebg{
+.orangebg {
   background-color: var(--orange);
   color: black;
 }
@@ -68,56 +68,62 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 /* sidebar toggle btn */
-#adminsidebar{
+#adminsidebar {
   height: 100vh;
   width: 15rem;
 }
-#adminsidebar a{
+#adminsidebar a {
   color: white;
   margin-bottom: 1rem;
   margin-left: 0rem;
   font-size: 14px;
 }
-#adminsidebar .nav-link{
+#adminsidebar .nav-link {
   padding-left: 0rem;
   border-bottom: 0.5px solid rgb(77, 77, 77);
   padding-bottom: 1.5rem;
   border-radius: 0px;
 }
-#adminsidebar a:hover{
+#adminsidebar a:hover {
   color: rgb(187, 186, 186);
 }
-#sidebarToggle{
+#sidebarToggle {
   background-color: var(--blue);
   border: none;
   color: white;
 }
-#sidebarToggle:hover{
+#sidebarToggle:hover {
   color: rgb(240, 240, 240);
 }
-#navbartogglerbtn{
+#navbartogglerbtn {
   background-color: var(--blue);
   border: none;
   color: white;
 }
-#navbartogglerbtn:hover{
+#navbartogglerbtn:hover {
   color: rgb(240, 240, 240);
 }
 
 /* logo */
-#companylogo img{
- height: 1.4rem;
+#companylogo img {
+  height: 1.4rem;
+}
+
+/* heading */
+.panelheading p {
+  font-size: 1.5rem;
+  font-weight: 550;
 }
 
 /* dashboard */
-#dashboardboxes{
+#dashboardboxes {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 1rem;
   justify-content: space-between;
 }
-.dbboxouter{
+.dbboxouter {
   display: flex;
   flex-direction: column;
   width: 23%;
@@ -127,15 +133,15 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   padding: 1rem;
   padding-bottom: 0.5rem;
 }
-.dbbox{
+.dbbox {
   display: flex;
 }
-.dbboxleft{
+.dbboxleft {
   margin-right: 1.5rem;
   display: flex;
   align-items: center;
 }
-.dbicon{
+.dbicon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,81 +150,128 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   width: 2.7rem;
   border-radius: 50%;
 }
-.dbicon span{
+.dbicon span {
   color: var(--orange);
 }
-.dbboxcount p{
+.dbboxcount p {
   font-weight: 550;
   font-size: 1.2rem;
 }
-.dbboxname p{
+.dbboxname p {
   color: grey;
   font-size: 0.9rem;
 }
-.dbboxbottom{
+.dbboxbottom {
   display: flex;
   justify-content: flex-end;
   border-top: 1px dotted rgb(230, 230, 230);
   margin-top: 0.6rem;
 }
-.dbboxbottom span{
+.dbboxbottom span {
   color: rgb(180, 180, 180);
 }
-.dbboxouter:hover{
+.dbboxouter:hover {
   cursor: pointer;
 }
-.dbboxouter:hover .rightarrow{
-  color:grey;
+.dbboxouter:hover .rightarrow {
+  color: grey;
+}
+
+/* all users */
+
+#alldatatable {
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 14px;
+}
+#alldatatable button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+#alldatatable button span {
+  font-size: 17px;
+}
+#datasearchbar {
+  width: 50%;
+  margin-left: 50%;
+}
+#datasearchbar input::placeholder {
+  font-size: 14px;
+}
+#datasearchbar button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+#datasearchbar span {
+  font-size: 20px;
 }
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+  /* heading */
+  .panelheading p {
+    font-size: 1.2rem;
+  }
   /* dashboard */
-  .dbboxouter{
+  .dbboxouter {
     width: 48%;
     margin: 1%;
     padding: 0.5rem;
     padding-bottom: 0.3rem;
   }
-  .dbboxcount p{
+  .dbboxcount p {
     font-size: 1rem;
   }
-  .dbboxname p{
+  .dbboxname p {
     font-size: 12px;
   }
-  .dbboxleft{
+  .dbboxleft {
     margin-right: 0.4rem;
   }
-  .dbicon{
+  .dbicon {
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
   }
-  .dbicon span{
+  .dbicon span {
     font-size: 18px;
   }
-  .dbboxbottom span{
+  .dbboxbottom span {
     font-size: 14px;
+  }
+
+  /* all users */
+  #datasearchbar {
+    width: 100%;
+    margin-left: 0%;
   }
 }
 
 /* iPads ----------- */
 @media only screen and (min-device-width: 501px) and (max-device-width: 1024px) {
   /* dashboard */
-  .dbboxouter{
+  .dbboxouter {
     width: 48%;
     margin: 1%;
   }
-  
-  
+
+  /* all users */
+  #datasearchbar {
+    width: 70%;
+    margin-left: 30%;
+  }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-device-width: 1025px) {
-  #sidebarToggle{
+  #sidebarToggle {
     display: none;
   }
-  #navbartogglerbtn{
+  #navbartogglerbtn {
     display: none;
   }
 }
