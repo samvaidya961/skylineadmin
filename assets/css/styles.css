@@ -212,9 +212,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
-  /* heading */
-  .panelheading p {
-    font-size: 1.2rem;
+  /* breadcrumbs */
+  .breadcrumblinks{
+    font-size: 13px;
+    margin-bottom: 1.5rem;
   }
   /* dashboard */
   .dbboxouter {
