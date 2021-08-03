@@ -7,6 +7,9 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body{
+  background-color: rgb(245, 245, 245);
+}
 :root {
   --blue: #4156a7;
   --grey: #def0fc;
@@ -103,15 +106,111 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 /* logo */
 #companylogo img{
- height: 1.5rem;
+ height: 1.4rem;
+}
+
+/* dashboard */
+#dashboardboxes{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+.dbboxouter{
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  background-color: white;
+  box-shadow: 2px 2px 10px lightgrey;
+  border-radius: 5px;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+}
+.dbbox{
+  display: flex;
+}
+.dbboxleft{
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.dbicon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7ca003d;
+  height: 2.7rem;
+  width: 2.7rem;
+  border-radius: 50%;
+}
+.dbicon span{
+  color: var(--orange);
+}
+.dbboxcount p{
+  font-weight: 550;
+  font-size: 1.2rem;
+}
+.dbboxname p{
+  color: grey;
+  font-size: 0.9rem;
+}
+.dbboxbottom{
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px dotted rgb(230, 230, 230);
+  margin-top: 0.6rem;
+}
+.dbboxbottom span{
+  color: rgb(180, 180, 180);
+}
+.dbboxouter:hover{
+  cursor: pointer;
+}
+.dbboxouter:hover .rightarrow{
+  color:grey;
 }
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+  /* dashboard */
+  .dbboxouter{
+    width: 48%;
+    margin: 1%;
+    padding: 0.5rem;
+    padding-bottom: 0.3rem;
+  }
+  .dbboxcount p{
+    font-size: 1rem;
+  }
+  .dbboxname p{
+    font-size: 12px;
+  }
+  .dbboxleft{
+    margin-right: 0.4rem;
+  }
+  .dbicon{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+  }
+  .dbicon span{
+    font-size: 18px;
+  }
+  .dbboxbottom span{
+    font-size: 14px;
+  }
 }
 
 /* iPads ----------- */
 @media only screen and (min-device-width: 501px) and (max-device-width: 1024px) {
+  /* dashboard */
+  .dbboxouter{
+    width: 48%;
+    margin: 1%;
+  }
+  
+  
 }
 
 /* Desktops and laptops ----------- */
