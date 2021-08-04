@@ -227,7 +227,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 #calendericon {
   display: none;
 }
-
+/* order status */
+.editstatusbtn{
+cursor: pointer;
+}
 /* faq */
 .faqitem {
   width: 80%;
