@@ -209,32 +209,49 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 #datasearchbar span {
   font-size: 20px;
 }
-.orderhistoryitems{
+.orderhistoryitems {
   border-bottom: 1px solid rgb(201, 201, 201);
   margin-bottom: 0.5rem;
 }
-.orderhistoryitem{
+.orderhistoryitem {
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
- 
 }
-.orderhistoryitem p{
+.orderhistoryitem p {
   white-space: normal;
 }
-.delivereddate{
+.delivereddate {
   color: var(--blue);
   font-weight: 550;
 }
-#calendericon{
+#calendericon {
   display: none;
 }
 
-
+/* faq */
+.faqitem {
+  width: 80%;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+.faq-prodname p {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: rgb(0, 0, 0);
+}
+.faq-questans label {
+  color: var(--blue);
+  font-weight: 550;
+}
+.faq-questans textarea::placeholder {
+  font-size: 14px;
+}
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   /* breadcrumbs */
-  .breadcrumblinks{
+  .breadcrumblinks {
     font-size: 13px;
     margin-bottom: 1.5rem;
   }
@@ -272,12 +289,18 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: 0%;
   }
 
-  #calendericon{
+  #calendericon {
     display: inline-block;
     position: absolute;
     right: 1.7rem;
     margin-top: -1.6rem;
     font-size: 18px;
+  }
+
+  /* faq */
+  .faqitem {
+    width: 100%;
+    padding: 0.4rem;
   }
 }
 
@@ -293,6 +316,12 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   #datasearchbar {
     width: 70%;
     margin-left: 30%;
+  }
+
+  
+  /* faq */
+  .faqitem {
+    width: 100%;
   }
 }
 
