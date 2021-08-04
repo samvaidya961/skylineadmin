@@ -400,7 +400,6 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   padding: 6px;
   display: flex;
   justify-content: center;
-  border: 1px solid lightgrey;
   background-color: var(--grey);
 }
 .prodaction span {
