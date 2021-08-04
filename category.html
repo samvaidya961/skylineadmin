@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Skyline | Admin</title>
+
+    <!-- Favicons -->
+    <link href="assets/images/favicon.png" rel="icon">
+    <link href="assets/images/favicon.png" rel="apple-touch-icon">
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="assets/css/styles.css" rel="stylesheet" />
+
+
+
+
+    <meta name="author" content="Kunal Pandharkar">
+    <meta name="twitter:title" content="Skyline | Admin">
+    <meta name="twitter:description"
+        content="designed and promoted by maharashtra industries directory, www.maharashtradirectory.com" />
+    <meta property="og:title" content="Skyline | Admin">
+    <meta property="og:url" content="wwww.skyline.com">
+    <meta property="og:image" content="https://samvaidya961.github.io/skylineadmin/assets/images/favicon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+</head>
+
+<body>
+
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div id="sidebar-wrapper">
+
+            <div id="adminsidebar" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                                class="rounded-circle me-2">
+                            <strong>Admin</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="allusers.html" class="nav-link">
+                            Users
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="nav-link d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser2">
+                            <li><a class="dropdown-item" href="allproducts.html">All Products</a></li>
+                            <li><a class="dropdown-item" href="#">Brands</a></li>
+                            <li><a class="dropdown-item" href="#">Categories</a></li>
+                            <li><a class="dropdown-item" href="#">Sub Categories</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="nav-link d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+                            Orders
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser3">
+                            <li><a class="dropdown-item" href="#">Order Status</a></li>
+                            <li><a class="dropdown-item" href="#">All Orders</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            Quote Requests
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg bluebg">
+                <div class="container-fluid d-flex">
+
+                    <button id="sidebarToggle">
+                        <span class="material-icons">
+                            menu
+                        </span>
+                    </button>
+
+                    <div id="companylogo">
+                        <img src="assets/images/logo.png" alt="">
+                    </div>
+
+                    <button id="navbartogglerbtn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+                        <span class="material-icons">
+                            more_vert
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- Page content-->
+            <div class="container-fluid">
+
+
+
+                <div class="allcontents bg-white p-2 mt-2">
+
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcrumblinks">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Process Measurement & Control</li>
+                        </ol>
+                    </nav>
+
+                    <div class="dataaddactions">
+                        <div class="addcategorybtns">
+                            <button class="btn bluebg btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#addsubcategorymodal">+ Add Sub-Category</button>
+
+                            <button class="btn bluebg btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#addcategorymodal">+ Add Product</button>
+                        </div>
+                        <!-- searchbar -->
+                        <div id="datasearchbar" class="input-group mt-3 mb-3">
+                            <input type="text" class="form-control" placeholder="Search Products"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn orangebg" type="button" id="button-addon2">
+                                <span class="material-icons">
+                                    search
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                    <!-- table -->
+                    <div id="alldatatable" class="bg-white mt-2 pt-3">
+                        <div id="catvisetabs">
+                            <ul class="nav nav-tabs" id="tabcategory" role="tablist">
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active categorytabhead" data-bs-toggle="tab"
+                                        data-bs-target="#cat1" type="button" role="tab" aria-controls="cat1"
+                                        aria-selected="true">PID Controllers</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link categorytabhead" data-bs-toggle="tab" data-bs-target="#cat1"
+                                        type="button" role="tab" aria-controls="cat1" aria-selected="true">Temperature
+                                        Controllers</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link categorytabhead" data-bs-toggle="tab" data-bs-target="#cat1"
+                                        type="button" role="tab" aria-controls="cat1" aria-selected="true">Cooling
+                                        Controllers</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link categorytabhead" data-bs-toggle="tab" data-bs-target="#cat1"
+                                        type="button" role="tab" aria-controls="cat1" aria-selected="true">Digital
+                                        Timers & Counters</button>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="tab-content" id="proTabContent">
+
+                            <div class="tab-pane fade show active" id="cat1" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="productscategorytabcont">
+
+
+                                    <div class="procard card">
+                                        <div class="prod-img" onclick="location.href=''">
+                                            <img src="assets/images/category1.png" class="" alt="...">
+                                        </div>
+
+                                        <div class="productdetails" onclick="location.href=''">
+                                            <a>
+                                                <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                    927863686504</p>
+                                            </a>
+                                            <p class="mb-0 text-success prodprice"><span
+                                                    class="cutprice text-danger">₹900 </span> ₹750
+                                            </p>
+                                        </div>
+                                        <div class="productactions">
+                                            <div class="prodaction">
+                                                <span id="prodview" class="material-icons text-dark">
+                                                    visibility
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="prodedit" class="material-icons text-dark">
+                                                    edit
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="proddelete" class="material-icons text-danger">
+                                                    delete
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="procard card">
+                                        <div class="prod-img" onclick="location.href=''">
+                                            <img src="assets/images/category1.png" class="" alt="...">
+                                        </div>
+
+                                        <div class="productdetails" onclick="location.href=''">
+                                            <a>
+                                                <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                    927863686504</p>
+                                            </a>
+                                            <p class="mb-0 text-success prodprice"><span
+                                                    class="cutprice text-danger">₹900 </span> ₹750
+                                            </p>
+                                        </div>
+                                        <div class="productactions">
+                                            <div class="prodaction">
+                                                <span id="prodview" class="material-icons text-dark">
+                                                    visibility
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="prodedit" class="material-icons text-dark">
+                                                    edit
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="proddelete" class="material-icons text-danger">
+                                                    delete
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="procard card">
+                                        <div class="prod-img" onclick="location.href=''">
+                                            <img src="assets/images/category1.png" class="" alt="...">
+                                        </div>
+
+                                        <div class="productdetails" onclick="location.href=''">
+                                            <a>
+                                                <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                    927863686504</p>
+                                            </a>
+                                            <p class="mb-0 text-success prodprice"><span
+                                                    class="cutprice text-danger">₹900 </span> ₹750
+                                            </p>
+                                        </div>
+                                        <div class="productactions">
+                                            <div class="prodaction">
+                                                <span id="prodview" class="material-icons text-dark">
+                                                    visibility
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="prodedit" class="material-icons text-dark">
+                                                    edit
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="proddelete" class="material-icons text-danger">
+                                                    delete
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="procard card">
+                                        <div class="prod-img" onclick="location.href=''">
+                                            <img src="assets/images/category1.png" class="" alt="...">
+                                        </div>
+
+                                        <div class="productdetails" onclick="location.href=''">
+                                            <a>
+                                                <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                    927863686504</p>
+                                            </a>
+                                            <p class="mb-0 text-success prodprice"><span
+                                                    class="cutprice text-danger">₹900 </span> ₹750
+                                            </p>
+                                        </div>
+                                        <div class="productactions">
+                                            <div class="prodaction">
+                                                <span id="prodview" class="material-icons text-dark">
+                                                    visibility
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="prodedit" class="material-icons text-dark">
+                                                    edit
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="proddelete" class="material-icons text-danger">
+                                                    delete
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="procard card">
+                                        <div class="prod-img" onclick="location.href=''">
+                                            <img src="assets/images/category1.png" class="" alt="...">
+                                        </div>
+
+                                        <div class="productdetails" onclick="location.href=''">
+                                            <a>
+                                                <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                    927863686504</p>
+                                            </a>
+                                            <p class="mb-0 text-success prodprice"><span
+                                                    class="cutprice text-danger">₹900 </span> ₹750
+                                            </p>
+                                        </div>
+                                        <div class="productactions">
+                                            <div class="prodaction">
+                                                <span id="prodview" class="material-icons text-dark">
+                                                    visibility
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="prodedit" class="material-icons text-dark">
+                                                    edit
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="proddelete" class="material-icons text-danger">
+                                                    delete
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="procard card">
+                                        <div class="prod-img" onclick="location.href=''">
+                                            <img src="assets/images/category1.png" class="" alt="...">
+                                        </div>
+
+                                        <div class="productdetails" onclick="location.href=''">
+                                            <a>
+                                                <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                    927863686504</p>
+                                            </a>
+                                            <p class="mb-0 text-success prodprice"><span
+                                                    class="cutprice text-danger">₹900 </span> ₹750
+                                            </p>
+                                        </div>
+                                        <div class="productactions">
+                                            <div class="prodaction">
+                                                <span id="prodview" class="material-icons text-dark">
+                                                    visibility
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="prodedit" class="material-icons text-dark">
+                                                    edit
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="proddelete" class="material-icons text-danger">
+                                                    delete
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="procard card">
+                                        <div class="prod-img" onclick="location.href=''">
+                                            <img src="assets/images/category1.png" class="" alt="...">
+                                        </div>
+
+                                        <div class="productdetails" onclick="location.href=''">
+                                            <a>
+                                                <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                    927863686504</p>
+                                            </a>
+                                            <p class="mb-0 text-success prodprice"><span
+                                                    class="cutprice text-danger">₹900 </span> ₹750
+                                            </p>
+                                        </div>
+                                        <div class="productactions">
+                                            <div class="prodaction">
+                                                <span id="prodview" class="material-icons text-dark">
+                                                    visibility
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="prodedit" class="material-icons text-dark">
+                                                    edit
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="proddelete" class="material-icons text-danger">
+                                                    delete
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="procard card">
+                                        <div class="prod-img" onclick="location.href=''">
+                                            <img src="assets/images/category1.png" class="" alt="...">
+                                        </div>
+
+                                        <div class="productdetails" onclick="location.href=''">
+                                            <a>
+                                                <p class="prodname">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                    927863686504</p>
+                                            </a>
+                                            <p class="mb-0 text-success prodprice"><span
+                                                    class="cutprice text-danger">₹900 </span> ₹750
+                                            </p>
+                                        </div>
+                                        <div class="productactions">
+                                            <div class="prodaction">
+                                                <span id="prodview" class="material-icons text-dark">
+                                                    visibility
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="prodedit" class="material-icons text-dark">
+                                                    edit
+                                                </span>
+                                            </div>
+
+                                            <div class="prodaction">
+                                                <span id="proddelete" class="material-icons text-danger">
+                                                    delete
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pagination -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination pagination-sm justify-content-end">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">1</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                    <!-- add category modal starts -->
+
+                    <div class="modal fade" id="addsubcategorymodal" tabindex="-1" aria-labelledby="addcategorymodalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Add Sub-Category</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label small">Select Category</label>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>Process Measurement & Control</option>
+                                            <option value="1">Electrical Measurement</option>
+                                            <option value="2">Industrial Automation</option>
+                                            <option value="3">Air Preparation Unit</option>
+                                          </select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label small">Number of
+                                            Sub-Categories</label>
+                                        <input type="number" class="form-control form-control-sm"
+                                            id="exampleFormControlInput1">
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <input type="email" class="form-control form-control-sm"
+                                            id="exampleFormControlInput1" placeholder="Sub Category Name - 1">
+                                    </div>
+                                    <div class="mb-2">
+                                        <input type="email" class="form-control form-control-sm"
+                                            id="exampleFormControlInput1" placeholder="Sub Category Name - 2">
+                                    </div>
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn bluebg btn-sm">Add/Save Sub-Category</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- add category modal ends -->
+
+
+
+                </div>
+
+            </div>
+            <!-- Page content ends-->
+
+
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>
