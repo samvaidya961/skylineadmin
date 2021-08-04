@@ -225,7 +225,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   color: var(--blue);
   font-weight: 550;
 }
-
+#calendericon{
+  display: none;
+  
+}
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
@@ -266,6 +269,14 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   #datasearchbar {
     width: 100%;
     margin-left: 0%;
+  }
+
+  #calendericon{
+    display: inline-block;
+    position: absolute;
+    right: 1.7rem;
+    margin-top: -1.6rem;
+    font-size: 18px;
   }
 }
 
