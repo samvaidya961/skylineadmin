@@ -227,17 +227,8 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 #calendericon{
   display: none;
-  
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-  /* display: none; */
-  /* -webkit-appearance: none; */
-  width: 15px;
-  padding: 0px;
-  margin: 0px;
-  margin-top: 0px;
-}
 
 
 /* Smartphones ----------- */
