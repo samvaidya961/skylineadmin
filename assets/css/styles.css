@@ -209,6 +209,23 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 #datasearchbar span {
   font-size: 20px;
 }
+.orderhistoryitems{
+  border-bottom: 1px solid rgb(201, 201, 201);
+  margin-bottom: 0.5rem;
+}
+.orderhistoryitem{
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+ 
+}
+.orderhistoryitem p{
+  white-space: normal;
+}
+.delivereddate{
+  color: var(--blue);
+  font-weight: 550;
+}
+
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
