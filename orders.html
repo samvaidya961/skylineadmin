@@ -155,8 +155,6 @@
             <!-- Page content-->
             <div class="container-fluid">
 
-
-
                 <div class="allcontents bg-white p-2 mt-2">
 
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -165,10 +163,7 @@
                             <li class="breadcrumb-item active" aria-current="page">Order Status</li>
                         </ol>
                     </nav>
-                    <!-- <div class="panelheading">
-                        <p>Users</p>
-                    </div> -->
-
+                    
 
                     <!-- searchbar -->
                     <div id="datasearchbar" class="input-group mt-3 mb-3">
@@ -180,6 +175,7 @@
                             </span>
                         </button>
                     </div>
+
 
                     <!-- table -->
                     <div class="bg-white mt-2">
@@ -222,10 +218,14 @@
                                         <tr>
                                             <th>Order ID</th>
                                             <th>Customer Name</th>
+                                            <th>Contact No.</th>
                                             <th>Ship To</th>
-                                            <th></th>
+                                            <th>Purchased Products</th>
+                                            <th>Quantity</th>
                                             <th>Purchased Price</th>
-                                            <th>Payment Mode</th>
+                                            <th>GST No.</th>
+                                            <th>Ordered Date</th>
+                                            <th>Payment Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -237,29 +237,44 @@
                                                     <p class="mb-0">Samruddhi Sanjay Vaidya</p>
                                                 </div>
                                             </td>
+                                            <td>1234567890</td>
                                             <td>
                                                 <div class="tablecellwidth">
                                                     <p class="mb-0">123 Main Street, New York, NY 10030</p>
                                                 </div>
                                             </td>
-                                            <td>04-08-2021</td>
-                                            <td>₹5000</td>
                                             <td>
-                                                COD
+                                                <div class="orderedproductlinks">
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>500</td>
+                                            <td>₹5000</td>
+                                            <td>07AABCU9603R1ZP</td>
+                                            <td>04-08-2021</td>
+                                            <td>
+                                                <span class="badge bg-success">Paid</span>
                                             </td>
 
                                             <td>
                                                 <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
+                                                    <button class="btn bg-success btn-sm" data-bs-toggle="modal"
+                                                        data-bs-target="#acceptordermodal">
+                                                        <span class="material-icons text-white">
+                                                            done
                                                         </span>
                                                     </button>
 
                                                     <button class="btn btn-danger btn-sm">
                                                         <span class="material-icons">
-                                                            delete
+                                                            close
                                                         </span>
                                                     </button>
                                                 </div>
@@ -279,13 +294,16 @@
                                         <tr>
                                             <th>Order ID</th>
                                             <th>Customer Name</th>
+                                            <th>Contact No.</th>
                                             <th>Ship To</th>
-                                            <th>Purchased Price</th>
-                                            <th>Payment Mode</th>
                                             <th>Status</th>
+                                            <th>Purchased Products</th>
+                                            <th>Quantity</th>
+                                            <th>Purchased Price</th>
+                                            <th>GST No.</th>
                                             <th>Ordered Date</th>
-                                            <th>Estimated Delivery</th>
-                                            <th>Action</th>
+                                            <th>Payment Status</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -296,43 +314,42 @@
                                                     <p class="mb-0">Samruddhi Sanjay Vaidya</p>
                                                 </div>
                                             </td>
+                                            <td>1234567890</td>
                                             <td>
                                                 <div class="tablecellwidth">
                                                     <p class="mb-0">123 Main Street, New York, NY 10030</p>
                                                 </div>
                                             </td>
-                                            <td>₹5000</td>
-                                            <td>Debit Card</td>
-
                                             <td>
                                                 <div class="d-flex editstatusbtn" data-bs-toggle="modal"
                                                     data-bs-target="#statusupdate">
-                                                    <span class="badge bg-primary">In Progress</span>
+                                                    <span class="badge bg-secondary">Packed</span>
                                                     <span class="material-icons" style="font-size: 21px;">
                                                         edit_note
                                                     </span>
                                                 </div>
-
+                
                                             </td>
-                                            <td>04-08-2021</td>
+                                            <td>
+                                                <div class="orderedproductlinks">
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>500</td>
+                                            <td>₹5000</td>
+                                            <td>07AABCU9603R1ZP</td>
                                             <td>04-08-2021</td>
                                             <td>
-                                                <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
-                                                        </span>
-                                                    </button>
-
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <span class="material-icons">
-                                                            delete
-                                                        </span>
-                                                    </button>
-                                                </div>
-
+                                                <span class="badge bg-success">Paid</span>
                                             </td>
+
                                         </tr>
 
                                         <tr>
@@ -342,44 +359,44 @@
                                                     <p class="mb-0">Samruddhi Sanjay Vaidya</p>
                                                 </div>
                                             </td>
+                                            <td>1234567890</td>
                                             <td>
                                                 <div class="tablecellwidth">
                                                     <p class="mb-0">123 Main Street, New York, NY 10030</p>
                                                 </div>
                                             </td>
-                                            <td>₹5000</td>
-                                            <td>Debit Card</td>
-
                                             <td>
                                                 <div class="d-flex editstatusbtn" data-bs-toggle="modal"
                                                     data-bs-target="#statusupdate">
-                                                    <span class="badge bg-primary">In Progress</span>
+                                                    <span class="badge bg-primary">Shipped</span>
                                                     <span class="material-icons" style="font-size: 21px;">
                                                         edit_note
                                                     </span>
                                                 </div>
-
+                
                                             </td>
-                                            <td>04-08-2021</td>
+                                            <td>
+                                                <div class="orderedproductlinks">
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>500</td>
+                                            <td>₹5000</td>
+                                            <td>07AABCU9603R1ZP</td>
                                             <td>04-08-2021</td>
                                             <td>
-                                                <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
-                                                        </span>
-                                                    </button>
-
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <span class="material-icons">
-                                                            delete
-                                                        </span>
-                                                    </button>
-                                                </div>
-
+                                                <span class="badge bg-success">Paid</span>
                                             </td>
+
                                         </tr>
+
 
                                         <tr>
                                             <td>12345</td>
@@ -388,89 +405,42 @@
                                                     <p class="mb-0">Samruddhi Sanjay Vaidya</p>
                                                 </div>
                                             </td>
+                                            <td>1234567890</td>
                                             <td>
                                                 <div class="tablecellwidth">
                                                     <p class="mb-0">123 Main Street, New York, NY 10030</p>
                                                 </div>
                                             </td>
-                                            <td>₹5000</td>
-                                            <td>Debit Card</td>
-
                                             <td>
                                                 <div class="d-flex editstatusbtn" data-bs-toggle="modal"
                                                     data-bs-target="#statusupdate">
-                                                    <span class="badge bg-primary">In Progress</span>
+                                                    <span class="badge bluebg">Out For Delivery</span>
                                                     <span class="material-icons" style="font-size: 21px;">
                                                         edit_note
                                                     </span>
                                                 </div>
-
-                                            </td>
-                                            <td>04-08-2021</td>
-                                            <td>04-08-2021</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
-                                                        </span>
-                                                    </button>
-
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <span class="material-icons">
-                                                            delete
-                                                        </span>
-                                                    </button>
-                                                </div>
-
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>12345</td>
-                                            <td>
-                                                <div class="tablecellwidth">
-                                                    <p class="mb-0">Samruddhi Sanjay Vaidya</p>
-                                                </div>
+                
                                             </td>
                                             <td>
-                                                <div class="tablecellwidth">
-                                                    <p class="mb-0">123 Main Street, New York, NY 10030</p>
+                                                <div class="orderedproductlinks">
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
                                                 </div>
                                             </td>
+                                            <td>500</td>
                                             <td>₹5000</td>
-                                            <td>Debit Card</td>
-
-                                            <td>
-                                                <div class="d-flex editstatusbtn" data-bs-toggle="modal"
-                                                    data-bs-target="#statusupdate">
-                                                    <span class="badge bg-primary">In Progress</span>
-                                                    <span class="material-icons" style="font-size: 21px;">
-                                                        edit_note
-                                                    </span>
-                                                </div>
-
-                                            </td>
-                                            <td>04-08-2021</td>
+                                            <td>07AABCU9603R1ZP</td>
                                             <td>04-08-2021</td>
                                             <td>
-                                                <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
-                                                        </span>
-                                                    </button>
-
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <span class="material-icons">
-                                                            delete
-                                                        </span>
-                                                    </button>
-                                                </div>
-
+                                                <span class="badge bg-success">Paid</span>
                                             </td>
+
                                         </tr>
                                     </tbody>
                                 </table>
@@ -483,13 +453,15 @@
                                         <tr>
                                             <th>Order ID</th>
                                             <th>Customer Name</th>
+                                            <th>Contact No.</th>
                                             <th>Ship To</th>
-                                            <th>Purchased Price</th>
-                                            <th>Payment Mode</th>
                                             <th>Status</th>
+                                            <th>Purchased Products</th>
+                                            <th>Quantity</th>
+                                            <th>Purchased Price</th>
+                                            <th>GST No.</th>
                                             <th>Ordered Date</th>
-                                            <th>Delivered Date</th>
-                                            <th>Action</th>
+                                            <th>Payment Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -500,35 +472,33 @@
                                                     <p class="mb-0">Samruddhi Sanjay Vaidya</p>
                                                 </div>
                                             </td>
+                                            <td>1234567890</td>
                                             <td>
                                                 <div class="tablecellwidth">
                                                     <p class="mb-0">123 Main Street, New York, NY 10030</p>
                                                 </div>
                                             </td>
-                                            <td>₹5000</td>
-                                            <td>Debit Card</td>
-
                                             <td>
                                                 <span class="badge bg-success">Delivered</span>
                                             </td>
-                                            <td>04-08-2021</td>
+                                            <td>
+                                                <div class="orderedproductlinks">
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>500</td>
+                                            <td>₹5000</td>
+                                            <td>07AABCU9603R1ZP</td>
                                             <td>04-08-2021</td>
                                             <td>
-                                                <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
-                                                        </span>
-                                                    </button>
-
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <span class="material-icons">
-                                                            delete
-                                                        </span>
-                                                    </button>
-                                                </div>
-
+                                                <span class="badge bg-success">Paid</span>
                                             </td>
                                         </tr>
 
@@ -539,113 +509,33 @@
                                                     <p class="mb-0">Samruddhi Sanjay Vaidya</p>
                                                 </div>
                                             </td>
+                                            <td>1234567890</td>
                                             <td>
                                                 <div class="tablecellwidth">
                                                     <p class="mb-0">123 Main Street, New York, NY 10030</p>
                                                 </div>
                                             </td>
-                                            <td>₹5000</td>
-                                            <td>Debit Card</td>
-
                                             <td>
                                                 <span class="badge bg-success">Delivered</span>
                                             </td>
-                                            <td>04-08-2021</td>
-                                            <td>04-08-2021</td>
                                             <td>
-                                                <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
-                                                        </span>
-                                                    </button>
-
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <span class="material-icons">
-                                                            delete
-                                                        </span>
-                                                    </button>
-                                                </div>
-
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>12345</td>
-                                            <td>
-                                                <div class="tablecellwidth">
-                                                    <p class="mb-0">Samruddhi Sanjay Vaidya</p>
+                                                <div class="orderedproductlinks">
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div class="tablecellwidth">
-                                                    <p class="mb-0">123 Main Street, New York, NY 10030</p>
-                                                </div>
-                                            </td>
+                                            <td>500</td>
                                             <td>₹5000</td>
-                                            <td>Debit Card</td>
-
-                                            <td>
-                                                <span class="badge bg-success">Delivered</span>
-                                            </td>
-                                            <td>04-08-2021</td>
+                                            <td>07AABCU9603R1ZP</td>
                                             <td>04-08-2021</td>
                                             <td>
-                                                <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
-                                                        </span>
-                                                    </button>
-
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <span class="material-icons">
-                                                            delete
-                                                        </span>
-                                                    </button>
-                                                </div>
-
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>12345</td>
-                                            <td>
-                                                <div class="tablecellwidth">
-                                                    <p class="mb-0">Samruddhi Sanjay Vaidya</p>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="tablecellwidth">
-                                                    <p class="mb-0">123 Main Street, New York, NY 10030</p>
-                                                </div>
-                                            </td>
-                                            <td>₹5000</td>
-                                            <td>Debit Card</td>
-
-                                            <td>
-                                                <span class="badge bg-success">Delivered</span>
-                                            </td>
-                                            <td>04-08-2021</td>
-                                            <td>04-08-2021</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
-                                                        </span>
-                                                    </button>
-
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <span class="material-icons">
-                                                            delete
-                                                        </span>
-                                                    </button>
-                                                </div>
-
+                                                <span class="badge bg-danger">Pending</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -659,12 +549,15 @@
                                         <tr>
                                             <th>Order ID</th>
                                             <th>Customer Name</th>
+                                            <th>Contact No.</th>
                                             <th>Ship To</th>
-                                            <th>Purchased Price</th>
-                                            <th>Payment Mode</th>
                                             <th>Status</th>
+                                            <th>Purchased Products</th>
+                                            <th>Quantity</th>
+                                            <th>Purchased Price</th>
+                                            <th>GST No.</th>
                                             <th>Ordered Date</th>
-                                            <th>Action</th>
+                                            <th>Payment Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -675,34 +568,33 @@
                                                     <p class="mb-0">Samruddhi Sanjay Vaidya</p>
                                                 </div>
                                             </td>
+                                            <td>1234567890</td>
                                             <td>
                                                 <div class="tablecellwidth">
                                                     <p class="mb-0">123 Main Street, New York, NY 10030</p>
                                                 </div>
                                             </td>
-                                            <td>₹5000</td>
-                                            <td>Debit Card</td>
-
                                             <td>
                                                 <span class="badge bg-danger">Canceled</span>
                                             </td>
+                                            <td>
+                                                <div class="orderedproductlinks">
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>500</td>
+                                            <td>₹5000</td>
+                                            <td>07AABCU9603R1ZP</td>
                                             <td>04-08-2021</td>
                                             <td>
-                                                <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
-                                                        </span>
-                                                    </button>
-
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <span class="material-icons">
-                                                            delete
-                                                        </span>
-                                                    </button>
-                                                </div>
-
+                                                <span class="badge bg-success">Paid</span>
                                             </td>
                                         </tr>
 
@@ -713,75 +605,35 @@
                                                     <p class="mb-0">Samruddhi Sanjay Vaidya</p>
                                                 </div>
                                             </td>
+                                            <td>1234567890</td>
                                             <td>
                                                 <div class="tablecellwidth">
                                                     <p class="mb-0">123 Main Street, New York, NY 10030</p>
                                                 </div>
                                             </td>
-                                            <td>₹5000</td>
-                                            <td>Debit Card</td>
-
                                             <td>
-                                                <span class="badge bg-danger">Canceled</span>
+                                                <span class="badge bg-success">Canceled</span>
                                             </td>
+                                            <td>
+                                                <div class="orderedproductlinks">
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                    <div class="orderedproductlink">
+                                                        <a href="">Philips I8MASTER PL-L 36W, 865, 4P 1CT, 25 –
+                                                            927863686504</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>500</td>
+                                            <td>₹5000</td>
+                                            <td>07AABCU9603R1ZP</td>
                                             <td>04-08-2021</td>
                                             <td>
-                                                <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
-                                                        </span>
-                                                    </button>
-
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <span class="material-icons">
-                                                            delete
-                                                        </span>
-                                                    </button>
-                                                </div>
-
+                                                <span class="badge bg-danger">Pending</span>
                                             </td>
                                         </tr>
-
-                                        <tr>
-                                            <td>12345</td>
-                                            <td>
-                                                <div class="tablecellwidth">
-                                                    <p class="mb-0">Samruddhi Sanjay Vaidya</p>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="tablecellwidth">
-                                                    <p class="mb-0">123 Main Street, New York, NY 10030</p>
-                                                </div>
-                                            </td>
-                                            <td>₹5000</td>
-                                            <td>Debit Card</td>
-
-                                            <td>
-                                                <span class="badge bg-danger">Canceled</span>
-                                            </td>
-                                            <td>04-08-2021</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
-                                                        data-bs-target="#viewusermodal">
-                                                        <span class="material-icons">
-                                                            visibility
-                                                        </span>
-                                                    </button>
-
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <span class="material-icons">
-                                                            delete
-                                                        </span>
-                                                    </button>
-                                                </div>
-
-                                            </td>
-                                        </tr>
-                                       
                                     </tbody>
                                 </table>
                             </div>
@@ -789,11 +641,10 @@
 
 
 
-
-                        <!--modal for view user starts -->
-                        <div class="modal fade" id="viewusermodal" tabindex="-1" aria-labelledby="viewusermodalLabel"
+                        <!--modal for order confirm starts -->
+                        <div class="modal fade" id="acceptordermodal" tabindex="-1" aria-labelledby="viewusermodalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Samruddhi Vaidya</h5>
@@ -801,15 +652,25 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <h6 class="fw-bold mb-3">Order</h6>
+                                        
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label small fw-bold">Estimated Delivery
+                                                Date :</label>
 
+                                            <input type="date" class="form-control form-control-sm" value="2021-08-04">
+                                        </div>
 
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn bluebg btn-sm">Update</button>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                        <!--modal for view user  ends-->
+                        <!--modal for order confirm ends-->
+
+
 
                         <!--modal for status update starts  -->
                         <div class="modal fade" id="statusupdate" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -829,7 +690,7 @@
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
                                                     id="flexRadioDefault1" checked>
                                                 <label class="form-check-label small" for="flexRadioDefault1">
-                                                    In Progress
+                                                    Order Packed
                                                 </label>
                                             </div>
 
@@ -837,7 +698,7 @@
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
                                                     id="flexRadioDefault2">
                                                 <label class="form-check-label small" for="flexRadioDefault2">
-                                                    Delivered
+                                                    Order Shipped
                                                 </label>
                                             </div>
 
@@ -845,9 +706,26 @@
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
                                                     id="flexRadioDefault3">
                                                 <label class="form-check-label small" for="flexRadioDefault3">
-                                                    Cancel Order
+                                                    Out For Delivery
                                                 </label>
                                             </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault3">
+                                                <label class="form-check-label small" for="flexRadioDefault3">
+                                                    Order Delivered
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault3">
+                                                <label class="form-check-label small" for="flexRadioDefault3">
+                                                    Order Canceled
+                                                </label>
+                                            </div>
+
                                         </div>
                                         <hr>
                                         <div class="mb-3">
@@ -865,6 +743,7 @@
                             </div>
                         </div>
                         <!--modal for status update ends  -->
+
 
                     </div>
 
