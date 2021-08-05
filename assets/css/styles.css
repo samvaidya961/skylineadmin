@@ -10,6 +10,9 @@
 body {
   background-color: rgb(245, 245, 245);
 }
+a:hover{
+  cursor: pointer;
+}
 :root {
   --blue: #4156a7;
   --grey: #def0fc;
@@ -250,11 +253,14 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   color: rgb(0, 0, 0);
 }
 .faq-questans label {
-  color: var(--blue);
   font-weight: 550;
 }
 .faq-questans textarea::placeholder {
   font-size: 14px;
+}
+.faq-postans {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* all categories */
