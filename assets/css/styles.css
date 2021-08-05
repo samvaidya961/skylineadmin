@@ -233,6 +233,8 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 /* order status */
 .editstatusbtn {
   cursor: pointer;
+  justify-content: flex-start;
+  align-items: center;
 }
 .tablecellwidth {
   white-space: normal;
@@ -242,15 +244,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .tablecellwidth p {
   white-space: normal;
 }
-.orderedproductlinks{
-  width: 9rem;
- 
-}
-.orderedproductlink {
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+
 
 /* faq */
 .faqitem {
