@@ -195,18 +195,18 @@
                                 </li>
 
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link categorytabhead" data-bs-toggle="tab" data-bs-target="#cat1"
+                                    <button class="nav-link categorytabhead" data-bs-toggle="tab" data-bs-target="#cat2"
                                         type="button" role="tab" aria-controls="cat1" aria-selected="true">Orders In Progress</button>
                                 </li>
 
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link categorytabhead" data-bs-toggle="tab" data-bs-target="#cat1"
+                                    <button class="nav-link categorytabhead" data-bs-toggle="tab" data-bs-target="#cat3"
                                         type="button" role="tab" aria-controls="cat1" aria-selected="true">
                                     Delivered Orders</button>
                                 </li>
 
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link categorytabhead" data-bs-toggle="tab" data-bs-target="#cat1"
+                                    <button class="nav-link categorytabhead" data-bs-toggle="tab" data-bs-target="#cat4"
                                         type="button" role="tab" aria-controls="cat1" aria-selected="true">Canceled Orders</button>
                                 </li>
 
@@ -216,6 +216,387 @@
                         <div class="tab-content pt-4" id="proTabContent">
 
                             <div class="tab-pane fade show active" id="cat1" role="tabpanel" aria-labelledby="home-tab">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Customer Name</th>
+                                            <th>Ship To</th>
+                                            <th></th>
+                                            <th>Purchased Price</th>
+                                            <th>Payment Mode</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>12345</td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">Samruddhi Sanjay Vaidya</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">123 Main Street, New York, NY 10030</p>
+                                                </div>
+                                            </td>
+                                            <td>04-08-2021</td>
+                                            <td>₹5000</td>
+                                            <td>
+                                                COD
+                                            </td>
+                                            
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#viewusermodal">
+                                                    <span class="material-icons">
+                                                        visibility
+                                                    </span>
+                                                </button>
+        
+                                                <button class="btn btn-danger btn-sm">
+                                                    <span class="material-icons">
+                                                        delete
+                                                    </span>
+                                                </button>
+                                                </div>
+                                                
+                                            </td>
+                                        </tr>
+        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <div class="tab-pane fade show" id="cat2" role="tabpanel" aria-labelledby="home-tab">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Customer Name</th>
+                                            <th>Ship To</th>
+                                            <th>Purchased Price</th>
+                                            <th>Payment Mode</th>
+                                            <th>Status</th>
+                                            <th>Ordered Date</th>
+                                            <th>Estimated Delivery</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>12345</td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">Samruddhi Sanjay Vaidya</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">123 Main Street, New York, NY 10030</p>
+                                                </div>
+                                            </td>
+                                            <td>₹5000</td>
+                                            <td>Debit Card</td>
+
+                                            <td>
+                                                <div class="d-flex editstatusbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#statusupdate">
+                                                    <span class="badge bg-primary">In Progress</span>
+                                                    <span class="material-icons" style="font-size: 21px;">
+                                                        edit_note
+                                                    </span>
+                                                </div>
+        
+                                            </td>
+                                            <td>04-08-2021</td>
+                                            <td>04-08-2021</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#viewusermodal">
+                                                    <span class="material-icons">
+                                                        visibility
+                                                    </span>
+                                                </button>
+        
+                                                <button class="btn btn-danger btn-sm">
+                                                    <span class="material-icons">
+                                                        delete
+                                                    </span>
+                                                </button>
+                                                </div>
+                                                
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>12345</td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">Samruddhi Sanjay Vaidya</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">123 Main Street, New York, NY 10030</p>
+                                                </div>
+                                            </td>
+                                            <td>₹5000</td>
+                                            <td>Debit Card</td>
+
+                                            <td>
+                                                <div class="d-flex editstatusbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#statusupdate">
+                                                    <span class="badge bg-primary">In Progress</span>
+                                                    <span class="material-icons" style="font-size: 21px;">
+                                                        edit_note
+                                                    </span>
+                                                </div>
+        
+                                            </td>
+                                            <td>04-08-2021</td>
+                                            <td>04-08-2021</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#viewusermodal">
+                                                    <span class="material-icons">
+                                                        visibility
+                                                    </span>
+                                                </button>
+        
+                                                <button class="btn btn-danger btn-sm">
+                                                    <span class="material-icons">
+                                                        delete
+                                                    </span>
+                                                </button>
+                                                </div>
+                                                
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>12345</td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">Samruddhi Sanjay Vaidya</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">123 Main Street, New York, NY 10030</p>
+                                                </div>
+                                            </td>
+                                            <td>₹5000</td>
+                                            <td>Debit Card</td>
+
+                                            <td>
+                                                <div class="d-flex editstatusbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#statusupdate">
+                                                    <span class="badge bg-primary">In Progress</span>
+                                                    <span class="material-icons" style="font-size: 21px;">
+                                                        edit_note
+                                                    </span>
+                                                </div>
+        
+                                            </td>
+                                            <td>04-08-2021</td>
+                                            <td>04-08-2021</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#viewusermodal">
+                                                    <span class="material-icons">
+                                                        visibility
+                                                    </span>
+                                                </button>
+        
+                                                <button class="btn btn-danger btn-sm">
+                                                    <span class="material-icons">
+                                                        delete
+                                                    </span>
+                                                </button>
+                                                </div>
+                                                
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>12345</td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">Samruddhi Sanjay Vaidya</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">123 Main Street, New York, NY 10030</p>
+                                                </div>
+                                            </td>
+                                            <td>₹5000</td>
+                                            <td>Debit Card</td>
+
+                                            <td>
+                                                <div class="d-flex editstatusbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#statusupdate">
+                                                    <span class="badge bg-primary">In Progress</span>
+                                                    <span class="material-icons" style="font-size: 21px;">
+                                                        edit_note
+                                                    </span>
+                                                </div>
+        
+                                            </td>
+                                            <td>04-08-2021</td>
+                                            <td>04-08-2021</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button class="btn orangebg btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#viewusermodal">
+                                                    <span class="material-icons">
+                                                        visibility
+                                                    </span>
+                                                </button>
+        
+                                                <button class="btn btn-danger btn-sm">
+                                                    <span class="material-icons">
+                                                        delete
+                                                    </span>
+                                                </button>
+                                                </div>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <div class="tab-pane fade show" id="cat3" role="tabpanel" aria-labelledby="home-tab">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Customer Name</th>
+                                            <th>Ship To</th>
+                                            <th>Purchased Price</th>
+                                            <th>Status</th>
+                                            <th>Date</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>12345</td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">Samruddhi Sanjay Vaidya</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">123 Main Street, New York, NY 10030</p>
+                                                </div>
+                                            </td>
+                                            <td>₹5000</td>
+                                            <td>
+                                                <div class="d-flex editstatusbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#statusupdate">
+                                                    <span class="badge bg-success">Delivered</span>
+                                                    <span class="material-icons" style="font-size: 21px;">
+                                                        edit_note
+                                                    </span>
+                                                </div>
+        
+                                            </td>
+                                            <td>04-08-2021</td>
+                                            <td class="d-flex">
+                                                <button class="btn orangebg btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#viewusermodal">
+                                                    <span class="material-icons">
+                                                        visibility
+                                                    </span>
+                                                </button>
+        
+                                                <button class="btn btn-danger btn-sm">
+                                                    <span class="material-icons">
+                                                        delete
+                                                    </span>
+                                                </button>
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>12345</td>
+                                            <td>Samruddhi Vaidya</td>
+                                            <td>Aurangabad</td>
+                                            <td>₹5000</td>
+                                            <td>
+                                                <div class="d-flex editstatusbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#statusupdate">
+                                                    <span class="badge bg-danger">Canceled</span>
+                                                    <span class="material-icons" style="font-size: 21px;">
+                                                        edit_note
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td>04-08-2021</td>
+                                            <td class="d-flex">
+                                                <button class="btn orangebg btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#viewusermodal">
+                                                    <span class="material-icons">
+                                                        visibility
+                                                    </span>
+                                                </button>
+        
+                                                <button class="btn btn-danger btn-sm">
+                                                    <span class="material-icons">
+                                                        delete
+                                                    </span>
+                                                </button>
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>12345</td>
+                                            <td>Samruddhi Vaidya</td>
+                                            <td>Aurangabad</td>
+                                            <td>₹5000</td>
+                                            <td>
+                                                <div class="d-flex editstatusbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#statusupdate">
+                                                    <span class="badge bg-primary">In Progress</span>
+                                                    <span class="material-icons" style="font-size: 21px;">
+                                                        edit_note
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td>04-08-2021</td>
+                                            <td class="d-flex">
+                                                <button class="btn orangebg btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#viewusermodal">
+                                                    <span class="material-icons">
+                                                        visibility
+                                                    </span>
+                                                </button>
+        
+                                                <button class="btn btn-danger btn-sm">
+                                                    <span class="material-icons">
+                                                        delete
+                                                    </span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <div class="tab-pane fade show" id="cat4" role="tabpanel" aria-labelledby="home-tab">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
@@ -370,27 +751,42 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                id="flexRadioDefault1" checked>
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                In Progress
-                                            </label>
+
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Status</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1" checked>
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    In Progress
+                                                </label>
+                                            </div>
+    
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2">
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Delivered
+                                                </label>
+                                            </div>
+    
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault3">
+                                                <label class="form-check-label" for="flexRadioDefault3">
+                                                    Cancel Order
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                id="flexRadioDefault2">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Delivered
-                                            </label>
+                                        <hr>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Estimated Delivery Date</label>
+                                            
+                                            <input type="date" class="form-control form-control-sm"
+                                            value="2021-08-04"
+                                            >
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                id="flexRadioDefault3">
-                                            <label class="form-check-label" for="flexRadioDefault3">
-                                                Cancel Order
-                                            </label>
-                                        </div>
+
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn bluebg btn-sm">Update Status</button>
