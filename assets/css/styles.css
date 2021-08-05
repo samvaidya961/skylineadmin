@@ -235,11 +235,15 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   cursor: pointer;
 }
 .tablecellwidth {
+  white-space: normal;
   width: 9rem;
+  word-break: break-word;
 }
 .tablecellwidth p {
   white-space: normal;
 }
+
+
 /* faq */
 .faqitem {
   width: 80%;
