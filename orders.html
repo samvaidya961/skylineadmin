@@ -265,7 +265,8 @@
                                                         </span>
                                                     </button>
 
-                                                    <button class="btn btn-danger btn-sm">
+                                                    <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#rejectordermodal">
                                                         <span class="material-icons">
                                                             close
                                                         </span>
@@ -601,7 +602,7 @@
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Samruddhi Vaidya</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -625,7 +626,31 @@
                         </div>
                         <!--modal for order confirm ends-->
 
+                        <!--modal for reject confirm starts -->
+                        <div class="modal fade" id="rejectordermodal" tabindex="-1"
+                            aria-labelledby="viewusermodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
 
+                                        <div class="mb-3">
+                                            <p class="small">Are you sure that you want to reject this order ?</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger btn-sm">Reject Order</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--modal for reject confirm ends-->
 
                         <!--modal for status update starts  -->
                         <div class="modal fade" id="statusupdate" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -633,7 +658,7 @@
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Samruddhi Vaidya</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -710,7 +735,7 @@
                             <div class="modal-dialog modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Samruddhi Vaidya</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -767,6 +792,8 @@
                             </div>
                         </div>
                         <!--modal for view products ordered  ends-->
+
+
 
 
                     </div>

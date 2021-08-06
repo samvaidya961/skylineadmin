@@ -228,7 +228,8 @@
                                             </span>
                                         </button>
 
-                                        <button class="btn btn-danger btn-sm">
+                                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                        data-bs-target="#deleteconfirmmodal">
                                             <span class="material-icons">
                                                 delete
                                             </span>
@@ -249,7 +250,7 @@
                             <div class="modal-dialog modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Samruddhi Vaidya</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -318,6 +319,32 @@
                         </div>
                         <!--modal for view user orders ends-->
 
+
+                        <!--modal for delete confirm starts -->
+                        <div class="modal fade" id="deleteconfirmmodal" tabindex="-1" aria-labelledby="viewusermodalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div class="mb-3">
+                                            <p>Are you sure that you want to delete ?</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger btn-sm">Confirm Delete</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--modal for delete confirm ends-->
 
                     </div>
 
