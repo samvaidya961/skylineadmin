@@ -437,6 +437,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  vertical-align: middle;
 }
 .addmorevaluebtn span {
   font-size: 20px;
@@ -448,12 +449,12 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   width: 90%;
   margin-right: 0.5rem;
 }
-.prodsubmitbtn{
+.prodsubmitbtn {
   display: flex;
   flex-direction: row-reverse;
   padding-bottom: 2rem;
 }
-.prodsubmitbtn button{
+.prodsubmitbtn button {
   width: 30%;
 }
 /* Smartphones ----------- */
@@ -525,20 +526,24 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   }
 
   /* add product */
-  .prodvariantvalues{
+  .prodvariantvalues {
     display: block;
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
   }
-  .valuepriceip{
+  .valuepriceip {
     width: 6rem;
     display: inline-block;
   }
-  .addmorevaluebtn{
+  .addmorevaluebtn {
     display: inline-block;
+    vertical-align: middle;
   }
-  .prodsubmitbtn button{
+  .addmorevaluebtn1 {
+    padding-top: 5px;
+  }
+  .prodsubmitbtn button {
     width: 60%;
   }
 }
