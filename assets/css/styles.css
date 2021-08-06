@@ -457,6 +457,17 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .prodsubmitbtn button {
   width: 30%;
 }
+
+
+/* bulk quote requests */
+.downloadbulkpdficon{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.downloadbulkpdficon span{
+  color: var(--blue);
+}
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   /* breadcrumbs */
