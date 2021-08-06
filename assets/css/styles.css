@@ -421,9 +421,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 /* add product */
-.prodvariants {
-  width: 50%;
-}
+
 .prodvariantvalues {
   display: flex;
   flex-direction: row;
@@ -432,6 +430,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 9rem;
   margin-right: 0.5rem;
 }
 .addmorevaluebtn {
@@ -442,7 +441,21 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .addmorevaluebtn span {
   font-size: 20px;
 }
-
+.descriptionprod {
+  display: flex;
+}
+.descriptionline {
+  width: 90%;
+  margin-right: 0.5rem;
+}
+.prodsubmitbtn{
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 2rem;
+}
+.prodsubmitbtn button{
+  width: 30%;
+}
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   /* breadcrumbs */
@@ -512,8 +525,21 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   }
 
   /* add product */
-  .prodvariants {
+  .prodvariantvalues{
+    display: block;
     width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .valuepriceip{
+    width: 6rem;
+    display: inline-block;
+  }
+  .addmorevaluebtn{
+    display: inline-block;
+  }
+  .prodsubmitbtn button{
+    width: 60%;
   }
 }
 
