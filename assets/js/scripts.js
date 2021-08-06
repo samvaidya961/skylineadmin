@@ -16,3 +16,22 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+$(function () {
+    let preloaded = [
+        { id: 1, src: 'assets/images/category1.png' },
+        { id: 2, src: 'assets/images/category1.png' },
+        { id: 3, src: 'assets/images/category1.png' },
+        { id: 4, src: 'assets/images/category1.png' },
+        { id: 5, src: 'assets/images/category1.png' },
+        { id: 6, src: 'assets/images/category1.png' }
+    ];
+    $('.input-images-1').imageUploader();
+    $('.input-images-2').imageUploader(
+        {
+            preloaded: preloaded,
+            imagesInputName: 'photos',
+            preloadedInputName: 'old'
+        }
+    );
+});
