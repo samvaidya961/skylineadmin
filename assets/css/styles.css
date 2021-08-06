@@ -10,7 +10,7 @@
 body {
   background-color: rgb(245, 245, 245);
 }
-a:hover{
+a:hover {
   cursor: pointer;
 }
 :root {
@@ -245,7 +245,6 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   white-space: normal;
 }
 
-
 /* faq */
 .faqitem {
   width: 80%;
@@ -417,9 +416,33 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .prodaction span {
   font-size: 19px;
 }
-.prodaction:hover{
+.prodaction:hover {
   cursor: pointer;
 }
+
+/* add product */
+.prodvariants {
+  width: 50%;
+}
+.prodvariantvalues {
+  display: flex;
+  flex-direction: row;
+}
+.valuepriceip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+.addmorevaluebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addmorevaluebtn span {
+  font-size: 20px;
+}
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   /* breadcrumbs */
@@ -486,6 +509,11 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin: 2%;
     width: 46%;
     margin-top: 1rem;
+  }
+
+  /* add product */
+  .prodvariants {
+    width: 100%;
   }
 }
 
