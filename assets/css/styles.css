@@ -238,11 +238,13 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 .tablecellwidth {
   white-space: normal;
-  width: 9rem;
   word-break: break-word;
+  width: 9rem;
 }
-.tablecellwidth p {
+.tablecellwidthbq{
   white-space: normal;
+  word-break: break-word;
+  
 }
 
 /* faq */
@@ -435,6 +437,9 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .valuepriceip1 {
   width: 40%;
 }
+.valuepriceip2{
+  width: 85%;
+}
 .addmorevaluebtn {
   display: flex;
   justify-content: center;
@@ -547,6 +552,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   .valuepriceip1 {
     width: 50%;
   }
+ 
   .addmorevaluebtn {
     display: inline-block;
     vertical-align: middle;
@@ -554,6 +560,11 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   
   .prodsubmitbtn button {
     width: 60%;
+  }
+
+  /* table col width */
+  .tablecellwidth{
+    width: 9rem;
   }
 }
 
