@@ -596,7 +596,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 /* Desktops and laptops ----------- */
 @media only screen and (min-device-width: 1025px) {
   #sidebarToggle {
-    display: none;
+    margin-right: 1rem;
   }
   #navbartogglerbtn {
     display: none;
