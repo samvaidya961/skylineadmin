@@ -440,15 +440,13 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   justify-content: center;
   align-items: center;
   vertical-align: middle;
+  margin-right: 0.3rem;
 }
 
 .descriptionprod {
   display: flex;
 }
-.descriptionline {
-  width: 90%;
-  margin-right: 0.5rem;
-}
+
 .prodsubmitbtn {
   display: flex;
   flex-direction: row-reverse;
