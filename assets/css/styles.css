@@ -431,9 +431,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   width: 9rem;
   margin-right: 0.5rem;
   flex-direction: column;
-  
 }
-
+.valuepriceip1{
+  width: 40%;
+}
 .addmorevaluebtn {
   display: flex;
   justify-content: center;
