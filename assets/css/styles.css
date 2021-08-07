@@ -553,9 +553,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     display: inline-block;
     vertical-align: middle;
   }
-  .addmorevaluebtn1 {
-    padding-top: 5px;
-  }
+  
   .prodsubmitbtn button {
     width: 60%;
   }

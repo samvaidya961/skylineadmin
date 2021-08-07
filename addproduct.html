@@ -28,8 +28,11 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
-
+    <!-- texteditor js cdn -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
+    <!-- image uploader css -->
     <link rel="stylesheet" href="assets/css/image-uploader.min.css">
+
 </head>
 
 <body>
@@ -357,46 +360,21 @@
 
                             <div class="mb-3">
                                 <label class="form-label small">Add Product Description :</label>
-
-
-                                <div class="descriptionprod mb-3">
-                                    <div class="descriptionline">
-                                        <input type="text" class="form-control form-control-sm w-100"
-                                            placeholder="Line 1">
-                                    </div>
-
-                                    <!-- <div class="addmorevaluebtn">
-                                        <span class="material-icons text-danger">
-                                            add_circle_outline
-                                        </span>
-                                    </div> -->
-                                </div>
-
-
-                                <div class="descriptionprod mb-3">
-                                    <div class="descriptionline">
-                                        <input type="text" class="form-control form-control-sm w-100"
-                                            placeholder="Line 2">
-                                    </div>
-
-                                    <div class="addmorevaluebtn addmorevaluebtn1">
-                                        <span class="material-icons text-success">
-                                            add_circle_outline
-                                        </span>
-                                    </div>
-
-                                    <div class="addmorevaluebtn addmorevaluebtn1">
-                                        <span class="material-icons text-danger">
-                                            remove_circle_outline
-                                        </span>
-                                    </div>
-                                </div>
-
+                                <div id="editor" class="small">Type here...</div>
+                                <script>
+                                    ClassicEditor
+                                        .create(document.querySelector('#editor'))
+                                        .then(editor => {
+                                            console.log(editor);
+                                        })
+                                        .catch(error => {
+                                            console.error(error);
+                                        });
+                                </script>
 
                             </div>
 
                             <hr>
-
 
                             <div class="mb-3 col-md-6">
                                 <label for="formFileSm" class="form-label small">Upload Product Manual</label>
@@ -422,7 +400,6 @@
         </div>
     </div>
 
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/image-uploader.min.js"></script>
@@ -434,6 +411,7 @@
     <script src="assets/js/scripts.js"></script>
     <script type="text/javascript" src="http://example.com/jquery.min.js"></script>
     <script type="text/javascript" src="http://example.com/image-uploader.min.js"></script>
+
 
 </body>
 
