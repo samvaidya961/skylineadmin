@@ -17,6 +17,18 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+
+ClassicEditor
+    .create(document.querySelector('#editor'))
+    .then(editor => {
+        console.log(editor);
+    })
+    .catch(error => {
+        console.error(error);
+    });
+
+
+
 $(function () {
     let preloaded = [
         { id: 1, src: 'assets/images/category1.png' },
