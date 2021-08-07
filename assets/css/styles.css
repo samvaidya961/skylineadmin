@@ -432,7 +432,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   margin-right: 0.5rem;
   flex-direction: column;
 }
-.valuepriceip1{
+.valuepriceip1 {
   width: 40%;
 }
 .addmorevaluebtn {
@@ -441,9 +441,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   align-items: center;
   vertical-align: middle;
 }
-.addmorevaluebtn span {
-  font-size: 20px;
-}
+
 .descriptionprod {
   display: flex;
 }
@@ -460,14 +458,13 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   width: 30%;
 }
 
-
 /* bulk quote requests */
-.downloadbulkpdficon{
+.downloadbulkpdficon {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.downloadbulkpdficon span{
+.downloadbulkpdficon span {
   color: var(--blue);
 }
 /* Smartphones ----------- */
@@ -548,6 +545,9 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   .valuepriceip {
     width: 6rem;
     display: inline-block;
+  }
+  .valuepriceip1 {
+    width: 50%;
   }
   .addmorevaluebtn {
     display: inline-block;
