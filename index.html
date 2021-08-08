@@ -40,7 +40,7 @@
 
   <div class="d-flex" id="wrapper">
     <!-- Sidebar-->
-    <div id="sidebar-wrapper">
+    <div id="sidebar-wrapper" class="bg-dark">
 
       <div id="adminsidebar" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
@@ -53,9 +53,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
 
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
+              <li><a class="dropdown-item" href="login.html">Sign out</a></li>
             </ul>
           </div>
         </a>
@@ -131,7 +129,7 @@
           </button>
 
           <div id="companylogo">
-            <img src="assets/images/logo.png" alt="">
+            <img src="assets/images/logo.png" alt="" onclick="location.href='index.html'">
           </div>
 
           <button id="navbartogglerbtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -265,15 +263,19 @@
         </div>
         <!-- dashboard ends -->
 
-        <div id="bannercalendar" class="d-flex mb-4">
+        <div id="bannercalendar" class="mb-4">
           <!-- add images/banner for home page starts-->
           <div class="addbannerimgcalendar">
 
-            <h5 class="mt-4 mb-4">Banners For Home Page</h5>
-            <div id="bannerimagesip" class="input-images-1"></div>
-            <div class="bannerimgpostbtn mt-4">
-              <button class="btn btn-sm orangebg">Upload Images</button>
-            </div>
+            <h5 class="mt-4 mb-4 text-center">Banners For Home Page</h5>
+            <form method="POST" name="form-example-1" id="form-example-1" enctype="multipart/form-data">
+              <div class="input-images-2"></div>
+              <div class="bannerimgpostbtn mt-4">
+                <button class="btn btn-sm orangebg">Upload Images</button>
+              </div>
+            </form>
+          
+            
           </div>
           <!-- add images/banner for home page ends-->
 
@@ -321,6 +323,10 @@
 
         </div>
 
+
+
+
+        
       </div>
       <!-- Page content ends-->
 

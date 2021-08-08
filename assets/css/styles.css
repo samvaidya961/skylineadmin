@@ -484,6 +484,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 .prodsubmitbtn button {
   width: 30%;
+  margin-left: 1rem;
 }
 
 /* add variant */
@@ -502,6 +503,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   border: 1px solid var(--grey);
   margin: 1rem;
   margin-left: 0rem;
+}
+.addedvariant:hover {
+  box-shadow: 2px 2px 10px lightgrey;
+  cursor: pointer;
 }
 .addedvarname {
   padding-bottom: 0.5rem;
@@ -648,14 +653,45 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   border-radius: 5px;
   padding: 1rem;
   margin-top: 2rem;
-  text-align: center;
 }
 .image-uploader {
   height: 14rem;
 }
+.bannerimgpostbtn {
+  text-align: center;
+}
+
+/* register-login user page start */
+.registeruserform {
+  width: 34%;
+  margin-left: 33%;
+  padding: 2rem;
+  padding-top: 1rem;
+  box-shadow: 2px 2px 10px lightgrey;
+  border-radius: 5px;
+  background-color: white;
+}
+.registeruserform input {
+  font-size: 14px;
+}
+.registeruserform label {
+  font-size: 13px;
+}
+.registerloginbtn button {
+  background-color: var(--orange);
+}
+.registeruserform .small {
+  font-size: 13px;
+}
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+  /* register-login user page start */
+  .registeruserform {
+    width: 92%;
+    margin-left: 4%;
+    padding: 1.2rem;
+  }
   /* breadcrumbs */
   .breadcrumblinks {
     font-size: 13px;
@@ -759,7 +795,6 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   /* banner images and calendar*/
   #bannercalendar {
     flex-direction: column;
-
   }
   .addbannerimgcalendar {
     width: 100%;
@@ -771,11 +806,16 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     max-width: 100%;
     font-size: 14px;
   }
-  
 }
 
 /* iPads ----------- */
 @media only screen and (min-device-width: 501px) and (max-device-width: 1024px) {
+  /* register-login user page start */
+  .registeruserform {
+    width: 50%;
+    margin-left: 25%;
+    padding: 2rem;
+  }
   /* dashboard */
   .dbboxouter {
     width: 48%;
@@ -812,11 +852,9 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     padding-bottom: 0rem;
   }
 
-  
   /* banner images and calendar*/
   #bannercalendar {
     flex-direction: column;
-
   }
   .addbannerimgcalendar {
     width: 100%;
@@ -828,7 +866,6 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     max-width: 100%;
     font-size: 14px;
   }
-  
 }
 
 /* Desktops and laptops ----------- */

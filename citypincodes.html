@@ -38,7 +38,7 @@
 
     <div class="d-flex" id="wrapper">
         <!-- Sidebar-->
-        <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper" class="bg-dark">
 
             <div id="adminsidebar" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
@@ -52,9 +52,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
 
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            <li><a class="dropdown-item" href="login.html">Sign out</a></li>
                         </ul>
                     </div>
                 </a>
@@ -74,40 +72,39 @@
                     </li>
 
                     <li>
-                        <a href="#"
-                            class="nav-link d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                            id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
+                        <a href="categories.html" class="nav-link">
+                            Categories & Products
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser2">
-                            <li><a class="dropdown-item" href="allproducts.html">All Products</a></li>
-                            <li><a class="dropdown-item" href="#">Brands</a></li>
-                            <li><a class="dropdown-item" href="#">Categories</a></li>
-                            <li><a class="dropdown-item" href="#">Sub Categories</a></li>
-                        </ul>
-
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link">
+                        <a href="brands.html" class="nav-link">
+                            Brands
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="citypincodes.html" class="nav-link">
+                            Cities & Pincodes
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="faq.html" class="nav-link">
                             FAQ
                         </a>
                     </li>
 
                     <li>
-                        <a href="#"
-                            class="nav-link d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                            id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="orders.html" class="nav-link">
                             Orders
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser3">
-                            <li><a class="dropdown-item" href="#">Order Status</a></li>
-                            <li><a class="dropdown-item" href="#">All Orders</a></li>
-                        </ul>
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link">
+                        <a href="quoterequests.html" class="nav-link">
                             Quote Requests
                         </a>
                     </li>
@@ -131,8 +128,8 @@
                     </button>
 
                     <div id="companylogo">
-                        <img src="assets/images/logo.png" alt="">
-                    </div>
+                        <img src="assets/images/logo.png" alt="" onclick="location.href='index.html'">
+                      </div>
 
                     <button id="navbartogglerbtn" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -173,8 +170,8 @@
                     <div class="dataaddactions mb-4">
 
                         <div class="addcategorybtns">
-                            <button class="btn bluebg btn-sm" data-bs-toggle="modal"
-                                data-bs-target="#addcitymodal">+ Add City</button>
+                            <button class="btn bluebg btn-sm" data-bs-toggle="modal" data-bs-target="#addcitymodal">+
+                                Add City</button>
                         </div>
                         <!-- searchbar -->
                         <div id="datasearchbar" class="input-group mt-3 mb-3">
@@ -278,8 +275,8 @@
 
 
                         <!-- add brand modal starts -->
-                        <div class="modal fade" id="addcitymodal" tabindex="-1"
-                            aria-labelledby="addcitymodalLabel" aria-hidden="true">
+                        <div class="modal fade" id="addcitymodal" tabindex="-1" aria-labelledby="addcitymodalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -291,31 +288,33 @@
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">State
                                                 Name</label>
-                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                  </select>
+                                            <select class="form-select form-select-sm"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">City
                                                 Name</label>
-                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                  </select>
+                                            <select class="form-select form-select-sm"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">
                                                 Pincode
                                             </label>
                                             <input type="number" class="form-control form-control-sm"
-                                            id="exampleFormControlInput1">
+                                                id="exampleFormControlInput1">
                                         </div>
-                                        
+
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn bluebg btn-sm">Add/Save City</button>
@@ -340,31 +339,33 @@
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">State
                                                 Name</label>
-                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                                    <option selected>India</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                  </select>
+                                            <select class="form-select form-select-sm"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>India</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">City
                                                 Name</label>
-                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                                    <option selected>Aurangabad</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                  </select>
+                                            <select class="form-select form-select-sm"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>Aurangabad</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">
                                                 Pincode
                                             </label>
                                             <input type="number" class="form-control form-control-sm"
-                                            id="exampleFormControlInput1" value="431001">
+                                                id="exampleFormControlInput1" value="431001">
                                         </div>
-                                        
+
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn bluebg btn-sm">Update City</button>
