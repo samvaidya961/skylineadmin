@@ -435,7 +435,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   flex-direction: column;
 }
 .valuepriceip1 {
-  width: 40%;
+  width: 45%;
 }
 .valuepriceip2{
   width: 85%;
@@ -447,11 +447,9 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   vertical-align: middle;
   margin-right: 0.3rem;
 }
-
 .descriptionprod {
   display: flex;
 }
-
 .prodsubmitbtn {
   display: flex;
   flex-direction: row-reverse;
@@ -460,6 +458,48 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .prodsubmitbtn button {
   width: 30%;
 }
+
+/* add variant */
+.addedvariantcont{
+  
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.addedvariant{
+  display: inline-block;
+  white-space: normal;
+  background-color: #f9fdff;
+  width: 12rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--grey);
+  margin: 1rem;
+  margin-left: 0rem;
+}
+.addedvarname{
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--grey);
+}
+#seemorelessbtn{
+  margin-right: 0;
+  font-size: 12px;
+  color: var(--blue);
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+.addedvarprice{
+  font-size: 13px;
+}
+.addedvarprops{
+  font-size: 13px;
+  padding-top: 0.5rem;
+  border-top: 2px dotted var(--grey);
+}
+
+
 
 /* bulk quote requests */
 .downloadbulkpdficon {
@@ -470,6 +510,13 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .downloadbulkpdficon span {
   color: var(--blue);
 }
+
+
+
+
+
+
+
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
   /* breadcrumbs */

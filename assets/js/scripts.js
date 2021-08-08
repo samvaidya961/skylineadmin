@@ -27,7 +27,15 @@ ClassicEditor
         console.error(error);
     });
 
-
+// toggle text see more see less
+const btn = document.getElementById("seemorelessbtn");
+btn.addEventListener("click", () => {
+    if (btn.innerText === "See More") {
+        btn.innerText = "See Less";
+    } else {
+        btn.innerText = "See More";
+    }
+});
 
 $(function () {
     let preloaded = [
