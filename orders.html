@@ -31,6 +31,8 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
+     <!-- texteditor js cdn -->
+     <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
 </head>
 
 <body>
@@ -213,6 +215,12 @@
                                         Orders</button>
                                 </li>
 
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link categorytabhead" data-bs-toggle="tab" data-bs-target="#cat5"
+                                        type="button" role="tab" aria-controls="cat1" aria-selected="true">Returned
+                                        Orders</button>
+                                </li>
+
                             </ul>
                         </div>
 
@@ -266,7 +274,7 @@
                                                     </button>
 
                                                     <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
-                                                    data-bs-target="#rejectordermodal">
+                                                        data-bs-target="#rejectordermodal">
                                                         <span class="material-icons">
                                                             close
                                                         </span>
@@ -592,6 +600,55 @@
                                     </tbody>
                                 </table>
                             </div>
+
+                            <div class="tab-pane fade show" id="cat5" role="tabpanel" aria-labelledby="home-tab">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Customer Name</th>
+                                            <th>Contact No.</th>
+                                            <th>Ordered Date</th>
+                                            <th>Purchased Products</th>
+                                            <th>Purchased Price</th>
+                                            <th>Reason</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>12345</td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">skyline full user name</p>
+                                                </div>
+                                            </td>
+                                            <td>1234567890</td>
+                                            <td>04-08-2021</td>
+                                            <td>
+                                                <a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#viewproductsmodal">View Products</a>
+                                            </td>
+
+                                            <td>₹5000</td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                        elit. Corrupti, temporibus?</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <buttn class="btn btn-sm bluebg" data-bs-toggle="modal"
+                                                    data-bs-target="#replyreturnmodal">
+                                                    Reply
+                                                </buttn>
+                                            </td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
 
 
@@ -607,12 +664,10 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1"
                                                 class="form-label small fw-bold">Estimated Delivery
                                                 Date :</label>
-
                                             <input type="date" class="form-control form-control-sm" value="2021-08-04">
                                         </div>
 
@@ -620,15 +675,14 @@
                                     <div class="modal-footer">
                                         <button type="button" class="btn bluebg btn-sm">Update</button>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                         <!--modal for order confirm ends-->
 
                         <!--modal for reject confirm starts -->
-                        <div class="modal fade" id="rejectordermodal" tabindex="-1"
-                            aria-labelledby="viewusermodalLabel" aria-hidden="true">
+                        <div class="modal fade" id="rejectordermodal" tabindex="-1" aria-labelledby="viewusermodalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -793,7 +847,31 @@
                         </div>
                         <!--modal for view products ordered  ends-->
 
+                        <!--modal for replt to return starts -->
+                        <div class="modal fade" id="replyreturnmodal" tabindex="-1"
+                            aria-labelledby="replyreturnmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+                            <div class="mb-3">
+                                <label class="form-label small">Reply To Customer :</label>
+                                <div id="editor" class="small">Type here...</div>
+                            </div>
 
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn bluebg btn-sm">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--modal for replt to return ends-->
 
 
                     </div>
