@@ -179,6 +179,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .dbboxouter:hover .rightarrow {
   color: grey;
 }
+/* ckeditor */
+#editor{
+  height: 200px;
+}
 
 /* all users */
 
@@ -294,8 +298,11 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   cursor: pointer;
 }
 .categoryactions {
+  width: 96%;
+  margin-left: 2%;
   display: flex;
   justify-content: flex-end;
+  border-top: 1px dotted lightgrey;
 }
 .categoryaction {
   padding: 0.2rem;
@@ -533,7 +540,6 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .brandlogoimg img{
   height: 3rem;
 }
-
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 500px) {

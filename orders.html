@@ -31,8 +31,8 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
-     <!-- texteditor js cdn -->
-     <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
+    <!-- texteditor js cdn -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
 </head>
 
 <body>
@@ -632,10 +632,9 @@
 
                                             <td>₹5000</td>
                                             <td>
-                                                <div class="tablecellwidth">
-                                                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                                        elit. Corrupti, temporibus?</p>
-                                                </div>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#reasonreturnmodal">View</a>
+
                                             </td>
                                             <td>
                                                 <buttn class="btn btn-sm bluebg" data-bs-toggle="modal"
@@ -847,7 +846,7 @@
                         </div>
                         <!--modal for view products ordered  ends-->
 
-                        <!--modal for replt to return starts -->
+                        <!--modal for reply to return starts -->
                         <div class="modal fade" id="replyreturnmodal" tabindex="-1"
                             aria-labelledby="replyreturnmodalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -858,11 +857,11 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        
-                            <div class="mb-3">
-                                <label class="form-label small">Reply To Customer :</label>
-                                <div id="editor" class="small">Type here...</div>
-                            </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label small">Reply To Customer :</label>
+                                            <div id="editor" class="small">Type here...</div>
+                                        </div>
 
                                     </div>
                                     <div class="modal-footer">
@@ -871,9 +870,35 @@
                                 </div>
                             </div>
                         </div>
-                        <!--modal for replt to return ends-->
+                        <!--modal for reply to return ends-->
 
+                        <!--modal for reason to return starts -->
+                        <div class="modal fade" id="reasonreturnmodal" tabindex="-1"
+                            aria-labelledby="reasonreturnmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="d-flex mb-3justify-content-between align-content-center">
+                                            <h6 class="fw-bold">Reason For Returning Product</h6>
+                                        </div>
+                                        <div>
+                                            <p class="small">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                Dolorum odit
+                                                quae similique, esse debitis natus exercitationem ut maiores, facere
+                                                fuga sapiente possimus! Voluptas aliquam facere vero fuga quas
+                                                repellendus in!</p>
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                        <!--modal for reason to return ends-->
                     </div>
 
                     <!-- pagination -->

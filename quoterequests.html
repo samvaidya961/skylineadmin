@@ -19,8 +19,6 @@
     <link href="assets/css/styles.css" rel="stylesheet" />
 
 
-
-
     <meta name="author" content="Kunal Pandharkar">
     <meta name="twitter:title" content="Skyline | Admin">
     <meta name="twitter:description"
@@ -31,6 +29,8 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
+      <!-- texteditor js cdn -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
 </head>
 
 <body>
@@ -284,11 +284,11 @@
                                         </div>
                                         <form action="">
                                             <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">
-                                                    Reply To The User's Request
+                                                <label class="form-label">
+                                                    Reply:
                                                 </label>
-                                                <textarea class="form-control form-control-sm"
-                                                    id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                
+                                                <div id="editor" class="small">Type here...</div>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1" class="form-label">
