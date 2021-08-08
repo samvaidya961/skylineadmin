@@ -619,6 +619,9 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   .valuepriceip1 {
     width: 50%;
   }
+  .valuepriceip2 {
+    width: 75%;
+  }
 
   .addmorevaluebtn {
     display: inline-block;
