@@ -532,6 +532,14 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   border-top: 2px dotted var(--grey);
 }
 
+
+.field_wrapper1 input{
+  width: 90%;
+}
+.field_wrapper2 input{
+  width: 40%;
+}
+
 /* bulk quote requests */
 .downloadbulkpdficon {
   display: flex;
@@ -808,6 +816,21 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     max-width: 100%;
     font-size: 14px;
   }
+/* add variant */
+.field_wrapper1 input{
+  width: 85%;
+}
+.variantmorevalues{
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.variantmorevalues input{
+  width: 5rem;
+}
+.variantmorevalues select{
+  width: 7rem;
+}
 }
 
 /* iPads ----------- */
