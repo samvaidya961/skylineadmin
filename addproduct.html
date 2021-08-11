@@ -42,78 +42,84 @@
         <!-- Sidebar-->
         <div id="sidebar-wrapper" class="bg-dark">
 
-            <div id="adminsidebar" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
-              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      
-                <div class="dropdown">
-                  <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                    <strong>Admin</strong>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-      
-                    <li><a class="dropdown-item" href="login.html">Sign out</a></li>
-                  </ul>
-                </div>
-              </a>
-              <hr>
-              <ul class="nav nav-pills flex-column mb-auto">
-      
-                <li>
-                  <a href="index.html" class="nav-link">
-                    Dashboard
-                  </a>
-                </li>
-      
-                <li>
-                  <a href="allusers.html" class="nav-link">
-                    Users
-                  </a>
-                </li>
-      
-                <li>
-                  <a href="categories.html" class="nav-link">
-                    Categories & Products
-                  </a>
-                </li>
-      
-                <li>
-                  <a href="brands.html" class="nav-link">
-                    Brands
-                  </a>
-                </li>
-      
-      
-                <li>
-                  <a href="citypincodes.html" class="nav-link">
-                    Cities & Pincodes
-                  </a>
-                </li>
-      
-      
-                <li>
-                  <a href="faq.html" class="nav-link">
-                    FAQ
-                  </a>
-                </li>
-      
-                <li>
-                  <a href="orders.html" class="nav-link">
-                    Orders
-                  </a>
-                </li>
-      
-                <li>
-                  <a href="quoterequests.html" class="nav-link">
-                    Quote Requests
-                  </a>
-                </li>
-              </ul>
-      
-            </div>
-      
+          <div id="adminsidebar" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    
+              <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                  id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                  <strong>Admin</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+    
+                  <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+                </ul>
+              </div>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+    
+              <li>
+                <a href="index.html" class="nav-link">
+                  Dashboard
+                </a>
+              </li>
+    
+              <li>
+                <a href="allusers.html" class="nav-link">
+                  Users
+                </a>
+              </li>
+    
+              <li>
+                <a href="categories.html" class="nav-link">
+                  Categories & Products
+                </a>
+              </li>
+    
+              <li>
+                <a href="addvariants.html" class="nav-link">
+                  Product Variants
+                </a>
+              </li>
+    
+              <li>
+                <a href="brands.html" class="nav-link">
+                  Brands
+                </a>
+              </li>
+    
+    
+              <li>
+                <a href="citypincodes.html" class="nav-link">
+                  Cities & Pincodes
+                </a>
+              </li>
+    
+    
+              <li>
+                <a href="faq.html" class="nav-link">
+                  FAQ
+                </a>
+              </li>
+    
+              <li>
+                <a href="orders.html" class="nav-link">
+                  Orders
+                </a>
+              </li>
+    
+              <li>
+                <a href="quoterequests.html" class="nav-link">
+                  Quote Requests
+                </a>
+              </li>
+            </ul>
+    
           </div>
+    
+        </div>
 
 
         <!-- Page content wrapper-->
@@ -231,51 +237,7 @@
                             </div>
                            
                             <hr>
-                            <div class="mt-4 mb-5 prodvariants">
-
-
-                                <div class="mb-3">
-                                    <label class="form-label small">Add Product Variants :</label>
-                                    <a class="btn bluebg btn-sm" data-bs-toggle="modal"
-                                        data-bs-target="#addvariantmodal">Add New Variant</a>
-                                </div>
-
-                                <div class="addedvariantcont small">
-                                   
-                                    <div class="addedvariant">
-                                        <div data-bs-toggle="modal" data-bs-target="#editvariantmodal">
-                                            <div class="addedvarname">
-                                                <p class="mb-0"><strong>Diameter</strong></p>
-                                            </div>
-                                            <div class="addedvarprice">
-                                                <p class="mb-1">Value: 0.75mm</p>
-                                                <p class="mb-1">MRP: ₹150</p>
-                                                <p class="mb-1">Discount: 12%</p>
-                                                <p class="mb-1">GST: 18%</p>
-                                                <p class="mb-1">Selling Price : <strong>₹130</strong></p>
-                                                <p class="mb-0 text-success"><strong> In Stock</strong></p>
-                                            </div>
-                                        </div>
-                                      
-
-                                        <a id="seemorelessbtn" data-bs-toggle="collapse" href="#variantproperties"
-                                            aria-expanded="false" aria-controls="collapseExample">
-                                            See More
-                                        </a>
-                                        <div class="collapse" id="variantproperties">
-                                            <div class="addedvarprops">
-                                                <p class="mb-1">Weight: 0.092 kg</p>
-                                                <p class="mb-1">Country of Origin: India</p>
-                                                <p class="mb-1">Brand: Polycab</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <hr>
-
+                            
                             <div class="mb-3">
                                 <label class="form-label small">Add Product Description :</label>
                                 <div id="editor" class="small">Type here...</div>
@@ -291,261 +253,13 @@
                             <hr>
 
                             <div class="prodsubmitbtn">
-                                <button class="btn btn-sm orangebg">Save/Add Product</button>
+                                <button class="btn btn-sm orangebg" type="submit">Save/Add Product</button>
                             </div>
 
                         </form>
 
 
-                        <!--modal for add variant starts -->
-                        <div class="modal fade" id="addvariantmodal" tabindex="-1"
-                            aria-labelledby="addvariantmodalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Add New Variant</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                       
-                                       
-                                        <label class="form-label small">Variant Name 1:</label>
-                                        <div class="prodvariantvalues mb-3">
-                                            <div class="valuepriceip valuepriceip2">
-                                                <input type="text" class="form-control form-control-sm"
-                                                placeholder="Variant Name 2">
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                        <div class="prodvariantvalues mb-3">
-                                          
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" placeholder="MRP">
-                                            </div>
-        
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" placeholder="Discount">
-                                            </div>
-        
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" placeholder="GST">
-                                            </div>
-        
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" placeholder="Price">
-                                            </div>
-                                            <div class="valuepriceip">
-                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                                    <option selected>In Stock</option>
-                                                    <option value="1">Out Of Stock</option>
-                                                </select>
-                                            </div>
-                                           
-                                        </div>
 
-
-                                        <label class="form-label small">Variant Name 2:</label>
-                                        <div class="prodvariantvalues mb-3">
-                                            <div class="valuepriceip valuepriceip2">
-                                                <input type="text" class="form-control form-control-sm"
-                                                placeholder="Variant Name 2">
-                                            </div>
-                                            
-                                            <div class="addmorevaluebtn">
-                                                <span class="material-icons text-success">
-                                                    add_circle_outline
-                                                </span>
-                                            </div>
-                                            <div class="addmorevaluebtn">
-                                                <span class="material-icons text-danger">
-                                                    remove_circle_outline
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="prodvariantvalues mb-3">
-                                          
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" placeholder="MRP">
-                                            </div>
-        
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" placeholder="Discount">
-                                            </div>
-        
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" placeholder="GST">
-                                            </div>
-        
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" placeholder="Price">
-                                            </div>
-                                            <div class="valuepriceip">
-                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                                    <option selected>In Stock</option>
-                                                    <option value="1">Out Of Stock</option>
-                                                </select>
-                                            </div>
-                                           
-                                        </div>
-
-                                        <hr>
-
-                                        <div class="prodvariants mt-4 mb-5">
-                                            <label class="form-label small">Add Product Properties :</label>
-            
-                                            <div class="prodvariantvalues mb-3">
-                                                <div class="valuepriceip valuepriceip1">
-                                                    <input type="text" class="form-control form-control-sm"
-                                                        placeholder="Property Name">
-                                                </div>
-            
-                                                <div class="valuepriceip valuepriceip1">
-                                                    <input type="text" class="form-control form-control-sm"
-                                                        placeholder="Property Value">
-                                                </div>
-            
-                                            </div>
-            
-                                            <div class="prodvariantvalues mb-3">
-                                                <div class="valuepriceip valuepriceip1">
-                                                    <input type="text" class="form-control form-control-sm"
-                                                        placeholder="Property Name">
-                                                </div>
-            
-                                                <div class="valuepriceip valuepriceip1">
-                                                    <input type="text" class="form-control form-control-sm"
-                                                        placeholder="Property Value">
-                                                </div>
-                                                <div class="addmorevaluebtn">
-                                                    <span class="material-icons text-success">
-                                                        add_circle_outline
-                                                    </span>
-                                                </div>
-                                                <div class="addmorevaluebtn">
-                                                    <span class="material-icons text-danger">
-                                                        remove_circle_outline
-                                                    </span>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-
-                                        <div class="prodsubmitbtn">
-                                            <button class="btn btn-sm orangebg">Save/Add Variant</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!--modal for add variant ends-->
-
-
-                        <!--modal for edit variant starts -->
-                        <div class="modal fade" id="editvariantmodal" tabindex="-1"
-                            aria-labelledby="addvariantmodalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Edit Variant</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                       
-                                       
-                                        <label class="form-label small">Variant Name 1:</label>
-                                        <div class="prodvariantvalues mb-3">
-                                            <div class="valuepriceip valuepriceip2">
-                                                <input type="text" class="form-control form-control-sm"
-                                                value="Variant Name 1">
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                        <div class="prodvariantvalues mb-3">
-                                          
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" value="150">
-                                            </div>
-        
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" placeholder="20%">
-                                            </div>
-        
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" placeholder="18%">
-                                            </div>
-        
-                                            <div class="valuepriceip">
-                                                <input type="text" class="form-control form-control-sm" placeholder="120">
-                                            </div>
-                                            <div class="valuepriceip">
-                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                                    <option selected>In Stock</option>
-                                                    <option value="1">Out Of Stock</option>
-                                                </select>
-                                            </div>
-                                           
-                                        </div>
-
-
-                                       
-                                        <hr>
-
-                                        <div class="prodvariants mt-4 mb-5">
-                                            <label class="form-label small">Add Product Properties :</label>
-            
-                                            <div class="prodvariantvalues mb-3">
-                                                <div class="valuepriceip valuepriceip1">
-                                                    <input type="text" class="form-control form-control-sm"
-                                                        value="Weight">
-                                                </div>
-                                                
-                                                <div class="valuepriceip valuepriceip1">
-                                                    <input type="text" class="form-control form-control-sm"
-                                                        value="2 kg">
-                                                </div>
-            
-                                            </div>
-            
-                                            <div class="prodvariantvalues mb-3">
-                                                <div class="valuepriceip valuepriceip1">
-                                                    <input type="text" class="form-control form-control-sm"
-                                                        value="Color">
-                                                </div>
-            
-                                                <div class="valuepriceip valuepriceip1">
-                                                    <input type="text" class="form-control form-control-sm"
-                                                        value="Black">
-                                                </div>
-                                                <div class="addmorevaluebtn">
-                                                    <span class="material-icons text-success">
-                                                        add_circle_outline
-                                                    </span>
-                                                </div>
-                                                <div class="addmorevaluebtn">
-                                                    <span class="material-icons text-danger">
-                                                        remove_circle_outline
-                                                    </span>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-
-                                        <div class="prodsubmitbtn">
-                                            <button class="btn btn-sm btn-danger">Delete Variant</button>
-                                            <button class="btn btn-sm orangebg">Update Variant</button>
-                                            
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!--modal for edit variant ends-->
                     </div>
 
 
