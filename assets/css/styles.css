@@ -38,7 +38,7 @@ a:hover {
 }
 
 #sidebar-wrapper {
-  min-height: 100vh;
+  min-height: 120vh;
   margin-left: -15rem;
   transition: margin 0.25s ease-out;
   box-shadow: 1px 1px 3px rgb(235, 235, 235);
