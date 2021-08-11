@@ -18,7 +18,9 @@ a:hover {
   --grey: #def0fc;
   --orange: #f7ca00;
 }
-
+.modal-body{
+  font-size: 14px;
+}
 .bluebg {
   background-color: var(--blue);
   color: white;
