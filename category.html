@@ -31,6 +31,9 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
+    <!-- dynamic inputs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -297,49 +300,33 @@
 
 
 
-    <!-- add sub category modal starts -->
-    <div class="modal fade" id="addsubcategorymodal" tabindex="-1" aria-labelledby="addcategorymodalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add Sub-Category</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-
-                    <div class="prodvariantvalues mb-3">
-                        <div class="valuepriceip valuepriceip2">
-                            <input type="text" class="form-control form-control-sm" placeholder="Subcategory 1">
-                        </div>
-                    </div>
-
-
-                    <div class="prodvariantvalues mb-3">
-                        <div class="valuepriceip valuepriceip2">
-                            <input type="text" class="form-control form-control-sm" placeholder="Subcategory 2">
-                        </div>
-
-                        <div class="addmorevaluebtn">
-                            <span class="material-icons text-success">
-                                add_circle_outline
-                            </span>
-                        </div>
-                        <div class="addmorevaluebtn">
-                            <span class="material-icons text-danger">
-                                remove_circle_outline
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn bluebg btn-sm">Add/Save Sub-Category</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- add category modal ends -->
+     <!-- add sub category modal starts -->
+     <div class="modal fade" id="addsubcategorymodal" tabindex="-1" aria-labelledby="addcategorymodalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Add Sub-Category</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                     <div class="field_wrapper">
+                         <div class="d-flex mb-3">
+                             <input type="text" class="form-control form-control-sm" placeholder="Add Subcategory " name="field_name[]">
+                            
+                             <a href="javascript:void(0);" class="add_button mx-1" title="Add field"><span class="material-icons text-success">
+                                 add_circle_outline
+                             </span></a>
+                         </div>
+                     </div>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn bluebg btn-sm">Add/Save Sub-Category</button>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- add category modal ends -->
 
     <!--modal for delete product starts -->
     <div class="modal fade" id="deleteproductmodal" tabindex="-1" aria-labelledby="deleteproductLabel"
@@ -371,7 +358,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="assets/js/scripts.js"></script>
-
+    <script src="assets/js/dynamicfields.js"></script>
 </body>
 
 </html>
