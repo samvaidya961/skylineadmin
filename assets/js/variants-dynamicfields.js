@@ -7,10 +7,9 @@ $(document).ready(function () {
 
     var fieldHTML = '<div class="mt-4 mb-2"><input type="text" class="form-control form-control-sm d-inline m-1 mb-2" name="field_name1[]" value="" placeholder="Variant Name"/><div class="d-flex variantmorevalues"><input type="text" class="form-control form-control-sm m-1" placeholder="MRP" name="field_name2[]"><input type="text" class="form-control form-control-sm m-1" placeholder="Discount" name="field_name3[]"><input type="text" class="form-control form-control-sm m-1" placeholder="GST" name="field_name4[]"><input type="text" class="form-control form-control-sm m-1" placeholder="Price" name="field_name5[]"><select class="form-select form-select-sm m-1" aria-label=".form-select-sm example" name="field_name6[]"><option selected>In Stock</option><option value="1">Out Of Stock</option></select></div></div>';
 
-    var fieldHTML2 = '<div class="prodvariants  mt-2 d-flex"> <input type="text" class="form-control form-control-sm w-50 d-inline m-1" placeholder="Property Name" name="field_namep1[]" value="Weight"><input type="text" class="form-control form-control-sm w-50 d-inline m-1" placeholder="Property Value" name="field_namep2[]"></div><div class="prodvariants  mt-2 d-flex"> <input type="text" class="form-control form-control-sm w-50 d-inline m-1" placeholder="Property Name" name="field_namep1[]" value="Country"><input type="text" class="form-control form-control-sm w-50 d-inline m-1" placeholder="Property Value" name="field_namep2[]"></div>';
+    var fieldHTML2 = '<div><div class="prodvariants  mt-2 d-flex"> <input type="text" class="form-control form-control-sm w-50 d-inline m-1" placeholder="Property Name" name="field_namep1[]" value="Weight"><input type="text" class="form-control form-control-sm w-50 d-inline m-1" placeholder="Property Value" name="field_namep2[]"></div><div class="prodvariants  mt-2 d-flex"> <input type="text" class="form-control form-control-sm w-50 d-inline m-1" placeholder="Property Name" name="field_namep1[]" value="Country"><input type="text" class="form-control form-control-sm w-50 d-inline m-1" placeholder="Property Value" name="field_namep2[]"></div></div>';
 
-    var fieldHTML3='<a href="javascript:void(0);" class="remove_button mx-1"><span class="material-icons text-danger">remove_circle_outline</span></a>'
-    //New input field html
+
 
     var x = 1; //Initial field counter is 1
 
@@ -35,4 +34,3 @@ $(document).ready(function () {
 
 });
 
-// <a href="javascript:void(0);" class="remove_button mx-1"><span class="material-icons text-danger">remove_circle_outline</span></a>

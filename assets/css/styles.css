@@ -379,6 +379,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   border: 1px solid var(--blue);
   font-weight: 600;
 }
+.editsubcategorybtns {
+  padding: 0.4rem;
+  padding-top: 1rem;
+}
 /* product card */
 .productscategorytabcont .procard {
   margin: 1%;
