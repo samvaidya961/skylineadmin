@@ -352,6 +352,7 @@
     <!--modal for add variant ends-->
 
 
+   
     <!--modal for edit variant starts -->
     <div class="modal fade" id="editvariantmodal" tabindex="-1" aria-labelledby="addvariantmodalLabel"
         aria-hidden="true">
@@ -401,41 +402,24 @@
 
                     <hr>
 
-                    <div class="prodvariants mt-4 mb-5">
-                        <label class="form-label">Add Product Properties :</label>
-
-                        <div class="prodvariantvalues mb-3">
-                            <div class="valuepriceip valuepriceip1">
-                                <input type="text" class="form-control form-control-sm" value="Weight">
-                            </div>
-
-                            <div class="valuepriceip valuepriceip1">
-                                <input type="text" class="form-control form-control-sm" value="2 kg">
-                            </div>
-
+                    <div class="mb-4 mt-3">
+                        <label class="form-label">Properties :</label>
+                        <div class="field_wrapperpn">
+                          <div class="mb-3">
+                            <input type="text" class="form-control form-control-sm d-inline m-1" placeholder="Property Name" value="Weight"
+                              name="field_namep1[]">
+        
+                            <input type="text" class="form-control form-control-sm d-inline m-1" placeholder="Property Value" value="0.75kg"
+                              name="field_namep2[]">
+        
+                            <a href="javascript:void(0);" class="add_buttonpn" title="Add field">
+                              <span class="material-icons text-success">
+                                add_circle_outline
+                              </span>
+                            </a>
+                          </div>
                         </div>
-
-                        <div class="prodvariantvalues mb-3">
-                            <div class="valuepriceip valuepriceip1">
-                                <input type="text" class="form-control form-control-sm" value="Color">
-                            </div>
-
-                            <div class="valuepriceip valuepriceip1">
-                                <input type="text" class="form-control form-control-sm" value="Black">
-                            </div>
-                            <div class="addmorevaluebtn">
-                                <span class="material-icons text-success">
-                                    add_circle_outline
-                                </span>
-                            </div>
-                            <div class="addmorevaluebtn">
-                                <span class="material-icons text-danger">
-                                    remove_circle_outline
-                                </span>
-                            </div>
-                        </div>
-
-                    </div>
+                      </div>
 
                     <div class="prodsubmitbtn">
                         <button class="btn btn-sm btn-danger">Delete Variant</button>
@@ -459,7 +443,7 @@
     <!-- Core theme JS-->
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/variants-dynamicfields.js"></script>
-
+    <script src="assets/js/properties-dynamicfields.js"></script>
     <script type="text/javascript" src="http://example.com/jquery.min.js"></script>
     <script type="text/javascript" src="http://example.com/image-uploader.min.js"></script>
 
