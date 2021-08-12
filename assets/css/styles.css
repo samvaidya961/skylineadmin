@@ -534,12 +534,14 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 
 .field_wrapper1 input{
-  width: 90%;
+  width: 99%;
 }
 .field_wrapper2 input{
   width: 40%;
 }
-
+.field_wrapperpn input{
+  width: 40%;
+}
 /* bulk quote requests */
 .downloadbulkpdficon {
   display: flex;
@@ -665,7 +667,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   margin-top: 2rem;
 }
 .image-uploader {
-  height: 14rem;
+  min-height: 14rem;
 }
 .bannerimgpostbtn {
   text-align: center;
@@ -817,9 +819,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     font-size: 14px;
   }
 /* add variant */
-.field_wrapper1 input{
-  width: 85%;
-}
+
 .variantmorevalues{
   width: 100%;
   overflow-x: auto;
@@ -905,5 +905,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   /* all categories */
   .addcategorybtns {
     margin-bottom: -3.3rem;
+  }
+
+  /* add product */
+  .prodavialverified{
+    display: inline;
   }
 }
