@@ -272,16 +272,83 @@
         <div id="bannercalendar" class="mb-4">
           <!-- add images/banner for home page starts-->
           <div class="addbannerimgcalendar">
+            <div>
+              <h5 class="mt-4 mb-4 text-center">Banners For Home Page</h5>
+              <form method="">
+                <div class="mb-4 mt-2">
 
-            <h5 class="mt-4 mb-4 text-center">Banners For Home Page</h5>
-            <form method="POST" name="form-example-1" id="form-example-1" enctype="multipart/form-data">
-              <div class="input-images-2"></div>
-              <div class="bannerimgpostbtn mt-4">
-                <button class="btn btn-sm orangebg">Upload Images</button>
+                  <input type="file" class="form-control form-control-sm">
+                </div>
+                <div class="bannerimgpostbtn mt-4">
+                  <button class="btn btn-sm orangebg">Upload Images</button>
+                </div>
+              </form>
+            </div>
+
+            <div>
+              <!-- table -->
+              <div id="alldatatable" class="bg-white mt-4">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Uploaded Banner Images</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="brandlogoimg">
+                          <img src="assets/images/slider1.jpg" alt="">
+                        </div>
+                      </td>
+                      <td>
+                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                          data-bs-target="#deleteconfirmmodal">
+                          <span class="material-icons">
+                            delete
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="brandlogoimg">
+                          <img src="assets/images/slider2.jpg" alt="">
+                        </div>
+                      </td>
+                      <td>
+                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                          data-bs-target="#deleteconfirmmodal">
+                          <span class="material-icons">
+                            delete
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="brandlogoimg">
+                          <img src="assets/images/slider3.jpg" alt="">
+                        </div>
+                      </td>
+                      <td>
+                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                          data-bs-target="#deleteconfirmmodal">
+                          <span class="material-icons">
+                            delete
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </form>
-          
-            
+            </div>
+
+
           </div>
           <!-- add images/banner for home page ends-->
 
@@ -326,7 +393,6 @@
             <!-- calendar ends -->
           </div>
 
-
         </div>
 
 
@@ -335,6 +401,33 @@
 
     </div>
   </div>
+
+
+ <!--modal for delete confirm starts -->
+ <div class="modal fade" id="deleteconfirmmodal" tabindex="-1" aria-labelledby="deleteconfirmmodalLabel"
+ aria-hidden="true">
+ <div class="modal-dialog modal-sm">
+     <div class="modal-content">
+         <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel">Delete Image</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+
+             <div class="mb-3">
+                 <p>Are you sure that you want to delete ?</p>
+             </div>
+
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-danger btn-sm">Confirm Delete</button>
+         </div>
+
+     </div>
+ </div>
+</div>
+<!--modal for delete confirm ends-->
+
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
