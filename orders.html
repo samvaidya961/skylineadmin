@@ -33,6 +33,7 @@
     <meta property="og:image:height" content="1024">
     <!-- texteditor js cdn -->
     <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
+
 </head>
 
 <body>
@@ -587,7 +588,7 @@
                                             <th>Contact No.</th>
                                             <th>Ship To</th>
                                             <th>Status</th>
-                                            
+
                                             <th>Purchased Products</th>
                                             <th>Purchased Price</th>
                                             <th>GST No.</th>
@@ -618,7 +619,7 @@
                                             <td>
                                                 <span class="badge bg-primary">Canceled By Admin</span>
                                             </td>
-                                          
+
                                             <td>
                                                 <a href="#" data-bs-toggle="modal"
                                                     data-bs-target="#viewproductsmodal">View Products</a>
@@ -657,7 +658,7 @@
                                             <td>
                                                 <span class="badge bg-danger">Canceled By User</span>
                                             </td>
-                                           
+
                                             <td>
                                                 <a href="#" data-bs-toggle="modal"
                                                     data-bs-target="#viewproductsmodal">View Products</a>
@@ -686,11 +687,11 @@
                                             <th>Trade/Company Name</th>
                                             <th>Contact No.</th>
                                             <th>Pickup Address</th>
-                                           
+
                                             <th>Purchased Products</th>
                                             <th>Purchased Price</th>
                                             <th>Ordered Date</th>
-                                            <th>Reason</th> 
+                                            <th>Reason</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -713,7 +714,7 @@
                                                     <p class="mb-0">123 Main Street, New York, NY 10030</p>
                                                 </div>
                                             </td>
-                                         
+
                                             <td>
                                                 <a href="#" data-bs-toggle="modal"
                                                     data-bs-target="#viewproductsmodal">View Products</a>
@@ -726,7 +727,7 @@
                                                     data-bs-target="#reasonreturnmodalwithreply">View & Reply</a>
 
                                             </td>
-                                           
+
                                         </tr>
 
                                     </tbody>
@@ -735,7 +736,7 @@
                         </div>
 
                     </div>
-
+                   
                     <!-- pagination -->
                     <nav aria-label="Page navigation example">
                         <ul class="pagination pagination-sm justify-content-end">
@@ -792,7 +793,7 @@
 
     <!--modal for reject confirm starts -->
     <div class="modal fade" id="rejectordermodal" tabindex="-1" aria-labelledby="viewusermodalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
@@ -804,8 +805,11 @@
                         <p>Are you sure that you want to reject this order ?</p>
                     </div>
 
-                    <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
-                        placeholder="Write reason to reject order..."></textarea>
+                   
+                    <div class="mb-3">
+                  
+                        <div id="editor">Write reason to reject this order...</div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger btn-sm">Confirm Reject Order</button>
@@ -948,19 +952,68 @@
     </div>
     <!--modal for view products ordered  ends-->
 
-    <!--modal for reply to return starts -->
-    <div class="modal fade" id="replyreturnmodal" tabindex="-1" aria-labelledby="replyreturnmodalLabel"
+    <!--modal for reply to return by user starts -->
+    <div class="modal fade" id="reasonreturnmodalwithreply" tabindex="-1" aria-labelledby="replyreturnmodalLabel"
         aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <div class="d-flex mb-3justify-content-between align-content-center mt-3 mb-2">
+                        <h6 class="fw-bold">Canceled Products :</h6>
+                    </div>
+                 
+                    <div class="returnedproduct">
+                        <div class="orderhistoryitem">
+                            <p class="mb-0">
+                                <a href="">Polycab 2.5 Sqmm Single core Fr Pvc Ins. Copper Flexible
+                                    Cable Red As Per Is 694</a>
+                            </p>
+                            <p class="mb-0 text-success">₹ 10000</p>
+                            <p class="mb-0 text-secondary">Qty: 200</p>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-bold">Reason to return :</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                            <p class="mb-0 fw-bold">Detailed Reason :</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dolorum odit
+                                quae similique, esse debitis natus exercitationem ut maiores, facere
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
 
+                    <div class="returnedproduct">
+                        <div class="orderhistoryitem">
+                            <p class="mb-0">
+                                <a href="">Polycab 2.5 Sqmm Single core Fr Pvc Ins. Copper Flexible
+                                    Cable Red As Per Is 694</a>
+                            </p>
+                            <p class="mb-0 text-success">₹ 10000</p>
+                            <p class="mb-0 text-secondary">Qty: 200</p>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-bold">Reason to return :</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                            <p class="mb-0 fw-bold">Detailed Reason :</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dolorum odit
+                                quae similique, esse debitis natus exercitationem ut maiores, facere
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex mb-3justify-content-between align-content-center mt-3 mb-2">
+                        <h6 class="fw-bold">Reply To User</h6>
+                    </div>
                     <div class="mb-3">
-                        <label class="form-label">Reply To Customer :</label>
+                  
                         <div id="editor">Type here...</div>
                     </div>
 
@@ -971,7 +1024,7 @@
             </div>
         </div>
     </div>
-    <!--modal for reply to return ends-->
+    <!--modal for reply to return by user ends-->
 
     <!--modal for reason to return by admin starts -->
     <div class="modal fade" id="reasonreturnmodal" tabindex="-1" aria-labelledby="reasonreturnmodalLabel"
@@ -1000,42 +1053,11 @@
     </div>
     <!--modal for reason to return by admin ends-->
 
-    <!--modal for reason to return by user starts -->
-    <div class="modal fade" id="reasonreturnmodalwithreply" tabindex="-1" aria-labelledby="reasonreturnmodalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="d-flex mb-3justify-content-between align-content-center">
-                        <h6 class="fw-bold">Reason For Returning Product</h6>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Dolorum odit
-                            quae similique, esse debitis natus exercitationem ut maiores, facere
-                            fuga sapiente possimus! Voluptas aliquam facere vero fuga quas
-                            repellendus in!</p>
-                    </div>
-                    <hr>
-                    <div class="d-flex mb-3justify-content-between align-content-center mt-3 mb-2">
-                        <h6 class="fw-bold">Reply To User</h6>
-                    </div>
-                    <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
-                        placeholder="Write Your Reply Here..."></textarea>
+ 
 
-                  
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn bluebg btn-sm">Send Reply To User</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--modal for reason to return by user ends-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/image-uploader.min.js"></script>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
