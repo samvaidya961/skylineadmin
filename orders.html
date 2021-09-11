@@ -534,12 +534,14 @@
                                     <thead>
                                         <tr>
                                             <th>Order ID</th>
+                                            <th>Payment ID</th>
                                             <th>Customer Name</th>
+                                            <th>Trade/Company Name</th>
                                             <th>Contact No.</th>
                                             <th>Ship To</th>
                                             <th>Status</th>
+                                            <th>Reason</th>
                                             <th>Purchased Products</th>
-
                                             <th>Purchased Price</th>
                                             <th>GST No.</th>
                                             <th>Ordered Date</th>
@@ -549,9 +551,15 @@
                                     <tbody>
                                         <tr>
                                             <td>12345</td>
+                                            <td>#345678902345</td>
                                             <td>
                                                 <div class="tablecellwidth">
                                                     <p class="mb-0">skyline full user name</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">Any Company Name</p>
                                                 </div>
                                             </td>
                                             <td>1234567890</td>
@@ -561,7 +569,12 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <span class="badge bg-danger">Canceled</span>
+                                                <span class="badge bg-primary">Canceled By Admin</span>
+                                            </td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#reasonreturnmodal">View</a>
+
                                             </td>
                                             <td>
                                                 <a href="#" data-bs-toggle="modal"
@@ -576,9 +589,16 @@
 
                                         <tr>
                                             <td>12345</td>
+                                            <td>#345678902345</td>
+
                                             <td>
                                                 <div class="tablecellwidth">
                                                     <p class="mb-0">skyline full user name</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">Any Company Name</p>
                                                 </div>
                                             </td>
                                             <td>1234567890</td>
@@ -588,7 +608,12 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <span class="badge bg-danger">Canceled</span>
+                                                <span class="badge bg-danger">Canceled By User</span>
+                                            </td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#reasonreturnmodalwithreply">View & Reply</a>
+
                                             </td>
                                             <td>
                                                 <a href="#" data-bs-toggle="modal"
@@ -609,43 +634,51 @@
                                     <thead>
                                         <tr>
                                             <th>Order ID</th>
+                                            <th>Payment ID</th>
                                             <th>Customer Name</th>
+                                            <th>Trade/Company Name</th>
                                             <th>Contact No.</th>
-                                            <th>Ordered Date</th>
+                                            <th>Pickup Address</th>
+                                            <th>Reason</th> 
                                             <th>Purchased Products</th>
                                             <th>Purchased Price</th>
-                                            <th>Reason</th>
-                                            <th>Action</th>
+                                            <th>Ordered Date</th>
+                                           
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>12345</td>
+                                            <td>#345678902345</td>
                                             <td>
                                                 <div class="tablecellwidth">
                                                     <p class="mb-0">skyline full user name</p>
                                                 </div>
                                             </td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">Any Company Name</p>
+                                                </div>
+                                            </td>
                                             <td>1234567890</td>
-                                            <td>04-08-2021</td>
+                                            <td>
+                                                <div class="tablecellwidth">
+                                                    <p class="mb-0">123 Main Street, New York, NY 10030</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#reasonreturnmodalwithreply">View & Reply</a>
+
+                                            </td>
+                                           
                                             <td>
                                                 <a href="#" data-bs-toggle="modal"
                                                     data-bs-target="#viewproductsmodal">View Products</a>
                                             </td>
 
                                             <td>₹5000</td>
-                                            <td>
-                                                <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#reasonreturnmodal">View</a>
-
-                                            </td>
-                                            <td>
-                                                <buttn class="btn btn-sm bluebg" data-bs-toggle="modal"
-                                                    data-bs-target="#replyreturnmodal">
-                                                    Reply
-                                                </buttn>
-                                            </td>
-
+                                            <td>04-08-2021</td>
                                         </tr>
 
                                     </tbody>
@@ -723,9 +756,11 @@
                         <p>Are you sure that you want to reject this order ?</p>
                     </div>
 
+                    <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
+                        placeholder="Write reason to reject order..."></textarea>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-sm">Reject Order</button>
+                    <button type="button" class="btn btn-danger btn-sm">Confirm Reject Order</button>
                 </div>
 
             </div>
@@ -890,7 +925,7 @@
     </div>
     <!--modal for reply to return ends-->
 
-    <!--modal for reason to return starts -->
+    <!--modal for reason to return by admin starts -->
     <div class="modal fade" id="reasonreturnmodal" tabindex="-1" aria-labelledby="reasonreturnmodalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -915,9 +950,44 @@
             </div>
         </div>
     </div>
-    <!--modal for reason to return ends-->
+    <!--modal for reason to return by admin ends-->
 
+    <!--modal for reason to return by user starts -->
+    <div class="modal fade" id="reasonreturnmodalwithreply" tabindex="-1" aria-labelledby="reasonreturnmodalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex mb-3justify-content-between align-content-center">
+                        <h6 class="fw-bold">Reason For Returning Product</h6>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Dolorum odit
+                            quae similique, esse debitis natus exercitationem ut maiores, facere
+                            fuga sapiente possimus! Voluptas aliquam facere vero fuga quas
+                            repellendus in!</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex mb-3justify-content-between align-content-center mt-3 mb-2">
+                        <h6 class="fw-bold">Reply To User</h6>
+                    </div>
+                    <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
+                        placeholder="Write Your Reply Here..."></textarea>
 
+                  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bluebg btn-sm">Send Reply To User</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal for reason to return by user ends-->
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
