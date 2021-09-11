@@ -669,7 +669,7 @@
                                             <td>04-08-2021</td>
                                             <td>
                                                 <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#reasonreturnmodalwithreply">View & Reply</a>
+                                                    data-bs-target="#reasoncancelmodalwithreply">View & Reply</a>
 
                                             </td>
                                         </tr>
@@ -736,7 +736,7 @@
                         </div>
 
                     </div>
-                   
+
                     <!-- pagination -->
                     <nav aria-label="Page navigation example">
                         <ul class="pagination pagination-sm justify-content-end">
@@ -805,11 +805,13 @@
                         <p>Are you sure that you want to reject this order ?</p>
                     </div>
 
-                   
+
                     <div class="mb-3">
-                  
-                        <div id="editor">Write reason to reject this order...</div>
+                        <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
+                            placeholder="Write reason to reject this order..."></textarea>
                     </div>
+
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger btn-sm">Confirm Reject Order</button>
@@ -952,6 +954,51 @@
     </div>
     <!--modal for view products ordered  ends-->
 
+
+
+    <!--modal for reply to cancel by user starts -->
+    <div class="modal fade" id="reasoncancelmodalwithreply" tabindex="-1" aria-labelledby="replyreturnmodalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">skyline username</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="returnedproduct">
+                        
+                        <div>
+                            <p class="mb-0 fw-bold">Reason to cancel order :</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                            <p class="mb-0 fw-bold">Detailed Reason :</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dolorum odit
+                                quae similique, esse debitis natus exercitationem ut maiores, facere
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <p class="mb-3 fw-bold">Reply to User:</p>
+                    <div class="mb-3">
+                        <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
+                            placeholder="Write your reply here..."></textarea>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bluebg btn-sm">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal for reply to cancel by user ends-->
+
+
+
     <!--modal for reply to return by user starts -->
     <div class="modal fade" id="reasonreturnmodalwithreply" tabindex="-1" aria-labelledby="replyreturnmodalLabel"
         aria-hidden="true">
@@ -963,9 +1010,9 @@
                 </div>
                 <div class="modal-body">
                     <div class="d-flex mb-3justify-content-between align-content-center mt-3 mb-2">
-                        <h6 class="fw-bold">Canceled Products :</h6>
+                        <h6 class="fw-bold">Returned Products :</h6>
                     </div>
-                 
+
                     <div class="returnedproduct">
                         <div class="orderhistoryitem">
                             <p class="mb-0">
@@ -984,6 +1031,11 @@
                                 Dolorum odit
                                 quae similique, esse debitis natus exercitationem ut maiores, facere
                             </p>
+                        </div>
+                        <div class="mt-3 mb-3">
+                            <p class="mb-2 fw-bold">Reply to User:</p>
+                            <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
+                                placeholder="Write your reply here..."></textarea>
                         </div>
                     </div>
                     <hr>
@@ -1007,15 +1059,15 @@
                                 quae similique, esse debitis natus exercitationem ut maiores, facere
                             </p>
                         </div>
+                        <div class="mt-3 mb-3">
+                            <p class="mb-2 fw-bold">Reply to User:</p>
+                            <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"
+                                placeholder="Write your reply here..."></textarea>
+                        </div>
                     </div>
                     <hr>
-                    <div class="d-flex mb-3justify-content-between align-content-center mt-3 mb-2">
-                        <h6 class="fw-bold">Reply To User</h6>
-                    </div>
-                    <div class="mb-3">
-                  
-                        <div id="editor">Type here...</div>
-                    </div>
+                   
+                   
 
                 </div>
                 <div class="modal-footer">
@@ -1053,7 +1105,7 @@
     </div>
     <!--modal for reason to return by admin ends-->
 
- 
+
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
